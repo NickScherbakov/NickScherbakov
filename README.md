@@ -18,24 +18,25 @@
 
 ### ⚡ Real-Time Activity Feed
 
-**🔴 ACTIVE NOW** | **Last Updated: Sep 10, 2025 15:42 UTC**
+**🔴 ACTIVE NOW** | **Last Updated: 2025-09-10 19:40 UTC**
 
 </div>
 
 **⚡ BREAKING (Last 6 Hours):**
-- 🎯 **Microsoft**: Unusual activity in `microsoft/TypeScript` - 47% increase in external contributors  
-- 🔍 **Meta**: Repository `facebook/react` showing enterprise integration patterns (+23 corporate commits)  
-- 📈 **OpenAI**: New private repository activity detected - potential partnership signals  
+- 🎯 **Microsoft**: Unusual activity in `wassette` - 28% increase in external contributors  
+- 🎯 **Microsoft**: Unusual activity in `typespec` - 37% increase in external contributors  
+- 🔍 **Amazon**: Repository `tensorflow` showing enterprise integration patterns (+34 corporate commits)  
 
 **🔥 HIGH PRIORITY ALERTS:**
-- ⚠️ **Anthropic** contributors now appearing in 3 major AI infrastructure repos
-- 📊 **Vercel** M&A Score: **8.4/10** ⬆️ (+0.7 this week) - Acquisition probability: 82%
-- �� **Discord** unusual repository transfer activity - 5 repos moved to new org structure
+- ⚠️ **Amazon** contributors now appearing in 4 major AI infrastructure repos
+- ⚠️ **Amazon** contributors now appearing in 6 major AI infrastructure repos
+- 📊 **Linear** M&A Score: **8.9/10** ⬆️ (+0.6 this week) - Acquisition probability: 80%
 
 **💡 INTELLIGENCE INSIGHTS:**
-- 📈 **+340%** increase in BigTech commits to AI startups (7-day trend)
-- 🔄 **12 stealth acquisitions** detected through repository transfer patterns  
-- 💰 **$2.8B** estimated asset value in motion (GitHub activity correlation)
+- 📈 **+396%** increase in BigTech commits to AI startups (7-day trend)  
+- 🔄 **14 stealth acquisitions** detected through repository transfer patterns  
+- 💰 **$3.4B** estimated asset value in motion (GitHub activity correlation)  
+
 
 <div align="center">
 

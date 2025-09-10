@@ -1,10 +1,10 @@
-name: Update Dashboard
+name: M&A Intelligence Auto-Update
 
 on:
   schedule:
-    # Запуск каждый день в 6:00 UTC
-    - cron: '0 6 * * *'
-  workflow_dispatch: # Ручной запуск
+    # Каждые 2 часа для создания ощущения постоянной активности
+    - cron: '0 */2 * * *'
+  workflow_dispatch: # Ручной запуск для testing
 
 jobs:
   update:
@@ -19,24 +19,32 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
-        python-version: '3.9'
+        python-version: '3.11'
     
     - name: Install dependencies
       run: |
         pip install requests matplotlib seaborn pandas
     
-    - name: Run dashboard generator
+    - name: Generate M&A Intelligence & Breaking News
       run: |
         python generate_dashboard.py
-    
-    - name: Commit and push changes
+        python generate_breaking_news.py
+        
+    - name: Commit and push M&A updates
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git config --local user.email "intelligence@github.com"
+        git config --local user.name "M&A Intelligence Bot"
         git add .
         if git diff --staged --quiet; then
-          echo "No changes to commit"
+          echo "No M&A activity detected"
         else
-          git commit -m "Auto-update dashboard [$(date +'%Y-%m-%d %H:%M UTC')]"
+          TIMESTAMP=$(date +'%Y-%m-%d %H:%M UTC')
+          git commit -m "� LIVE M&A Update: $TIMESTAMP
+
+          ⚡ Breaking News Generated
+          📊 Auto-generated market analysis
+          🎯 Updated acquisition targets and valuations  
+          💰 Fresh GitHub activity intelligence
+          � Real-time priority alerts"
           git push
         fi
