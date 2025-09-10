@@ -81,7 +81,7 @@
   <a href="https://NickScherbakov.github.io/NickScherbakov-dashboard/">
     <img src="https://img.shields.io/badge/Dashboard-FF6B6B?style=for-the-badge&logo=github&logoColor=white" alt="Dashboard"/>
   </a>
-  <a href="mailto:your.email@example.com">
+  <a href="mailto:n.a.scherbakov@outlook.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   <a href="https://linkedin.com/in/nickscherbakov">
