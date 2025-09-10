@@ -31,12 +31,14 @@ def get_github_data():
     repos_to_track = [
         'facebook/react',
         'microsoft/vscode',
-        'google/tensorflow',
-        'apple/swift',
-        'netflix/zuul',
-        'amazon/aws-sdk-js',
+        'tensorflow/tensorflow',  # Updated from google/tensorflow
+        'swiftlang/swift',        # Updated from apple/swift
+        'Netflix/zuul',
+        'aws/aws-sdk-js',         # Updated from amazon/aws-sdk-js
         'stripe/stripe-js',
-        'twilio/twilio-python'
+        'twilio/twilio-python',
+        'vercel/next.js',         # Added popular repo
+        'denoland/deno'           # Added popular repo
     ]
 
     for repo_name in repos_to_track:
