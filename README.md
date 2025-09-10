@@ -18,16 +18,16 @@
 
 ### ⚡ Real-Time Activity Feed
 
-**🔴 ACTIVE NOW** | **Last Updated: 2025-09-10 19:40 UTC**
+**🔥 HIGH ACTIVITY** | **Last Updated: 2025-09-10 19:45 UTC**
 
 </div>
 
-**⚡ BREAKING (Last 6 Hours):**
+**🔥 HIGH ACTIVITY**
 - 🎯 **Microsoft**: Unusual activity in `wassette` - 28% increase in external contributors  
 - 🎯 **Microsoft**: Unusual activity in `typespec` - 37% increase in external contributors  
 - 🔍 **Amazon**: Repository `tensorflow` showing enterprise integration patterns (+34 corporate commits)  
 
-**🔥 HIGH PRIORITY ALERTS:**
+**🔥 HIGH ACTIVITY**
 - ⚠️ **Amazon** contributors now appearing in 4 major AI infrastructure repos
 - ⚠️ **Amazon** contributors now appearing in 6 major AI infrastructure repos
 - 📊 **Linear** M&A Score: **8.9/10** ⬆️ (+0.6 this week) - Acquisition probability: 80%
