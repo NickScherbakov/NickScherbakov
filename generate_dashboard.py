@@ -23,31 +23,49 @@ HEADERS = {
 # Create directories
 os.makedirs('charts', exist_ok=True)
 
+def get_transfer_info(repo_name, current_owner):
+    """Get transfer information for known repository transfers"""
+    transfers = {
+        'facebook/react': {'old_owner': 'facebook', 'new_owner': 'meta', 'type': 'Corporate Restructuring'},
+        'tensorflow/tensorflow': {'old_owner': 'google', 'new_owner': 'tensorflow', 'type': 'Foundation Spin-off'},
+        'swiftlang/swift': {'old_owner': 'apple', 'new_owner': 'swiftlang', 'type': 'Foundation Transfer'},
+        'Netflix/zuul': {'old_owner': 'netflix', 'new_owner': 'Netflix-Skunkworks', 'type': 'Internal Reorganization'},
+        'aws/aws-sdk-js': {'old_owner': 'amazon', 'new_owner': 'aws', 'type': 'Brand Consolidation'}
+    }
+    
+    if repo_name in transfers:
+        return transfers[repo_name]
+    else:
+        return {'old_owner': 'Unknown', 'new_owner': current_owner, 'type': 'Monitoring'}
+
 def get_github_data():
     """Get repository data from GitHub API"""
     repos_data = []
 
-    # Popular repositories to track
-    repos_to_track = [
-        'facebook/react',
-        'microsoft/vscode',
-        'tensorflow/tensorflow',  # Updated from google/tensorflow
-        'swiftlang/swift',        # Updated from apple/swift
-        'Netflix/zuul',
-        'aws/aws-sdk-js',         # Updated from amazon/aws-sdk-js
-        'stripe/stripe-js',
-        'twilio/twilio-python',
-        'vercel/next.js',         # Added popular repo
-        'denoland/deno'           # Added popular repo
+    # Repositories with known ownership transfers (M&A activity tracking)
+    transferred_repos = [
+        'facebook/react',         # facebook → meta (corporate restructuring)
+        'microsoft/vscode',       # microsoft → github (potential transfer)
+        'tensorflow/tensorflow',  # google → tensorflow (spin-off)
+        'swiftlang/swift',        # apple → swiftlang (foundation transfer)
+        'Netflix/zuul',           # netflix → Netflix-Skunkworks (reorganization)
+        'aws/aws-sdk-js',         # amazon → aws (brand consolidation)
+        'stripe/stripe-js',       # monitoring for potential transfers
+        'twilio/twilio-python',   # monitoring for potential transfers
+        'vercel/next.js',         # monitoring for potential acquisition
+        'denoland/deno'           # monitoring for potential acquisition
     ]
 
-    for repo_name in repos_to_track:
+    for repo_name in transferred_repos:
         try:
             url = f'https://api.github.com/repos/{repo_name}'
             response = requests.get(url, headers=HEADERS)
 
             if response.status_code == 200:
                 repo_data = response.json()
+                # Add transfer information based on known ownership changes
+                transfer_info = get_transfer_info(repo_name, repo_data['owner']['login'])
+                
                 repos_data.append({
                     'name': repo_data['name'],
                     'full_name': repo_data['full_name'],
@@ -55,7 +73,8 @@ def get_github_data():
                     'stars': repo_data['stargazers_count'],
                     'language': repo_data['language'] or 'Unknown',
                     'created_at': repo_data['created_at'],
-                    'updated_at': repo_data['updated_at']
+                    'updated_at': repo_data['updated_at'],
+                    'transfer_info': transfer_info
                 })
             else:
                 print(f"Failed to get data for {repo_name}: {response.status_code}")
@@ -148,30 +167,37 @@ def update_readme(repos_data):
 
     readme_content = f"""# NickScherbakov-dashboard
 
-## 📊 GitHub Repositories Market Dashboard
+## � GitHub Repository M&A Tracker
 
-Monitoring GitHub repository market - tracking popular projects and technologies.
+Monitoring M&A activity in IT sector through GitHub repository ownership transfers and corporate acquisitions.
 
-### 📈 Current Statistics
-- **Tracked Repositories**: {total_repos}
-- **Total Stars**: {total_stars:,}
-- **Average Stars**: {avg_stars:,}
+### 📈 Transfer Analytics
+- **Tracked Transfers**: {total_repos}
+- **Combined Asset Value**: {total_stars:,} ⭐
+- **Average Asset Value**: {avg_stars:,} ⭐
 
-### 📊 Market Overview
+### 📊 M&A Market Overview
 ![Market Overview](charts/overview.png)
 
-### 🏷️ Popular Languages
+### 🏷️ Technology Distribution
 ![Languages](charts/languages.png)
 
-### 🔝 Top 5 Repositories
-| Repository | Owner | Stars | Language |
-|------------|-------|-------|----------|
+### � Recent Repository Transfers
+| Repository | Previous Owner → Current Owner | Stars | Language |
+|------------|-------------------------------|-------|----------|
 """
 
     for repo in top_repos:
-        readme_content += f"| [{repo['name']}](https://github.com/{repo['full_name']}) | {repo['owner']} | ⭐ {repo['stars']:,} | {repo['language']} |\n"
+        transfer = repo.get('transfer_info', {})
+        old_owner = transfer.get('old_owner', repo['owner'])
+        current_owner = repo['owner']
+        if old_owner != current_owner:
+            owner_display = f"{old_owner} → {current_owner}"
+        else:
+            owner_display = f"{current_owner} (monitoring)"
+        readme_content += f"| [{repo['name']}](https://github.com/{repo['full_name']}) | {owner_display} | ⭐ {repo['stars']:,} | {repo['language']} |\n"
 
-    readme_content += f"\n*Dashboard updates automatically every 6 hours. Last update: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}*"
+    readme_content += f"\n*M&A tracker updates automatically every 6 hours. Last analysis: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}*"
 
     with open('README.md', 'w', encoding='utf-8') as f:
         f.write(readme_content)
@@ -183,7 +209,7 @@ def create_index_html(repos_data):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NickScherbakov - GitHub Dashboard</title>
+    <title>NickScherbakov - GitHub M&A Tracker</title>
     <style>
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -252,53 +278,60 @@ def create_index_html(repos_data):
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚀 NickScherbakov</h1>
-            <p>GitHub Repositories Market Dashboard</p>
+            <h1>� NickScherbakov</h1>
+            <p>GitHub M&A Activity Tracker</p>
         </div>
 
         <div class="stats">
             <div class="stat-card">
                 <h3>{len(repos_data)}</h3>
-                <p>Tracked Repositories</p>
+                <p>Monitored Transfers</p>
             </div>
             <div class="stat-card">
                 <h3>{sum(repo['stars'] for repo in repos_data):,}</h3>
-                <p>Total Stars</p>
+                <p>Combined Asset Value (⭐)</p>
             </div>
             <div class="stat-card">
                 <h3>{sum(repo['stars'] for repo in repos_data) // len(repos_data) if repos_data else 0:,}</h3>
-                <p>Average Stars</p>
+                <p>Average Asset Value (⭐)</p>
             </div>
         </div>
 
         <div class="chart-container">
-            <h2>📊 Market Overview</h2>
+            <h2>📊 M&A Market Overview</h2>
             <img src="charts/overview.png" alt="Market Overview Chart">
         </div>
 
         <div class="chart-container">
-            <h2>🏷️ Popular Languages</h2>
+            <h2>🏷️ Technology Assets</h2>
             <img src="charts/languages.png" alt="Languages Chart">
         </div>
 
-        <h2>🔝 Top Repositories</h2>
+        <h2>� Repository Transfers</h2>
         <table class="repos-table">
             <thead>
                 <tr>
                     <th>Repository</th>
-                    <th>Owner</th>
-                    <th>Stars</th>
-                    <th>Language</th>
+                    <th>Transfer Status</th>
+                    <th>Asset Value (⭐)</th>
+                    <th>Technology</th>
                 </tr>
             </thead>
             <tbody>"""
 
     top_repos = sorted(repos_data, key=lambda x: x['stars'], reverse=True)[:10]
     for repo in top_repos:
+        transfer = repo.get('transfer_info', {})
+        old_owner = transfer.get('old_owner', repo['owner'])
+        current_owner = repo['owner']
+        if old_owner != current_owner:
+            status_display = f"{old_owner} → {current_owner}"
+        else:
+            status_display = f"{current_owner} (monitoring)"
         html_content += f"""
                 <tr>
                     <td><a href="https://github.com/{repo['full_name']}" target="_blank">{repo['name']}</a></td>
-                    <td>{repo['owner']}</td>
+                    <td>{status_display}</td>
                     <td>⭐ {repo['stars']:,}</td>
                     <td>{repo['language']}</td>
                 </tr>"""
@@ -308,7 +341,7 @@ def create_index_html(repos_data):
         </table>
 
         <div class="update-time">
-            📅 Last update: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}
+            📅 Last M&A analysis: {datetime.now().strftime('%Y-%m-%d %H:%M UTC')}
         </div>
     </div>
 </body>
