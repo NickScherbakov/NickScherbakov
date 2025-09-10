@@ -1,0 +1,45 @@
+name: Update Dashboard
+
+on:
+  schedule:
+    # Запуск каждый день в 6:00 UTC (можно изменить)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Ручной запуск
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    
+    - name: Install dependencies
+      run: |
+        cd dashboard
+        pip install -r requirements.txt
+    
+    - name: Run dashboard generator
+      run: |
+        cd dashboard
+        python generate_dashboard.py
+    
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add dashboard/
+        git add README.md
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update dashboard [$(date +'%Y-%m-%d %H:%M UTC')]"
+          git push
+        fi
