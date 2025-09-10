@@ -2,7 +2,7 @@ name: Update Dashboard
 
 on:
   schedule:
-    # Запуск каждый день в 6:00 UTC (можно изменить)
+    # Запуск каждый день в 6:00 UTC
     - cron: '0 6 * * *'
   workflow_dispatch: # Ручной запуск
 
@@ -23,20 +23,17 @@ jobs:
     
     - name: Install dependencies
       run: |
-        cd dashboard
-        pip install -r requirements.txt
+        pip install requests matplotlib seaborn pandas
     
     - name: Run dashboard generator
       run: |
-        cd dashboard
         python generate_dashboard.py
     
     - name: Commit and push changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add dashboard/
-        git add README.md
+        git add .
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
