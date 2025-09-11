@@ -169,7 +169,7 @@ def generate_overview_chart(repos_data):
     fig.suptitle('GitHub Repositories Market Overview', fontsize=16)
 
     # Stars distribution
-    stars = [repo['stars'] for repo in repos_data]
+    stars = [repo.get('stars', 0) for repo in repos_data]
     ax1.hist(stars, bins=20, color='#1f77b4', alpha=0.7)
     ax1.set_title('Stars Distribution')
     ax1.set_xlabel('Stars Count')
@@ -178,7 +178,9 @@ def generate_overview_chart(repos_data):
     # Popular languages
     languages = defaultdict(int)
     for repo in repos_data:
-        languages[repo['language']] += 1
+        lang = repo.get('language', 'Unknown')
+        if lang:
+            languages[lang] += 1
 
     top_langs = sorted(languages.items(), key=lambda x: x[1], reverse=True)[:8]
     if top_langs:
@@ -188,9 +190,9 @@ def generate_overview_chart(repos_data):
         ax2.tick_params(axis='x', rotation=45)
 
     # Top repositories by stars
-    top_repos = sorted(repos_data, key=lambda x: x['stars'], reverse=True)[:10]
-    names = [repo['name'][:15] + '...' if len(repo['name']) > 15 else repo['name'] for repo in top_repos]
-    stars_count = [repo['stars'] for repo in top_repos]
+    top_repos = sorted(repos_data, key=lambda x: x.get('stars', 0), reverse=True)[:10]
+    names = [repo.get('name', 'Unknown')[:15] + '...' if len(repo.get('name', '')) > 15 else repo.get('name', 'Unknown') for repo in top_repos]
+    stars_count = [repo.get('stars', 0) for repo in top_repos]
 
     ax3.barh(names[::-1], stars_count[::-1], color='#2ca02c')
     ax3.set_title('Top Repositories by Stars')
@@ -198,7 +200,9 @@ def generate_overview_chart(repos_data):
     # Repository owners
     owners = defaultdict(int)
     for repo in repos_data:
-        owners[repo['owner']] += 1
+        owner = repo.get('owner', 'Unknown')
+        if owner:
+            owners[owner] += 1
 
     top_owners = sorted(owners.items(), key=lambda x: x[1], reverse=True)[:8]
     if top_owners:
@@ -215,7 +219,9 @@ def generate_language_chart(repos_data):
     """Generate language popularity chart"""
     languages = defaultdict(int)
     for repo in repos_data:
-        languages[repo['language']] += 1
+        lang = repo.get('language', 'Unknown')
+        if lang:
+            languages[lang] += 1
 
     if languages:
         plt.figure(figsize=(10, 6))
@@ -364,11 +370,11 @@ def create_index_html(repos_data):
                 <p>Monitored Transfers</p>
             </div>
             <div class="stat-card">
-                <h3>{sum(repo['stars'] for repo in repos_data):,}</h3>
+                <h3>{sum(repo.get('stars', 0) for repo in repos_data):,}</h3>
                 <p>Combined Asset Value (⭐)</p>
             </div>
             <div class="stat-card">
-                <h3>{sum(repo['stars'] for repo in repos_data) // len(repos_data) if repos_data else 0:,}</h3>
+                <h3>{sum(repo.get('stars', 0) for repo in repos_data) // len(repos_data) if repos_data else 0:,}</h3>
                 <p>Average Asset Value (⭐)</p>
             </div>
         </div>
@@ -408,8 +414,8 @@ def create_index_html(repos_data):
                 <tr>
                     <td><a href="https://github.com/{repo['full_name']}" target="_blank">{repo['name']}</a></td>
                     <td>{status_display}</td>
-                    <td>⭐ {repo['stars']:,}</td>
-                    <td>{repo['language']}</td>
+                    <td>⭐ {repo.get('stars', 0):,}</td>
+                    <td>{repo.get('language', 'Unknown')}</td>
                 </tr>"""
 
     html_content += f"""
@@ -444,11 +450,6 @@ def main():
     print("📈 Generating charts...")
     generate_overview_chart(repos_data)
     generate_language_chart(repos_data)
-
-    # Update README
-    print("📝 Updating README...")
-    update_main_readme(repos_data)  # Update main profile README
-    update_dashboard_readme(repos_data)  # Update dashboard README
 
     # Create HTML page
     print("🌐 Creating HTML page...")
