@@ -2,7 +2,7 @@
 
 
 
-<div align="center">## � GitHub Repository M&A Tracker
+<div align="center">GitHub Repository M&A Tracker
 
 
 
