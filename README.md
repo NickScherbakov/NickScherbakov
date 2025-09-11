@@ -1,6 +1,3 @@
-<div align="center">##NickScherbakov-dashboard
-
-
 
 <div align="center">GitHub Repository M&A Tracker
 
