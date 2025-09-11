@@ -153,28 +153,25 @@ def update_readme_with_news():
     
     # Find and replace the breaking news section
     breaking_start = "**⚡ BREAKING (Last 6 Hours):**"
-    priority_start = "**🔥 HIGH PRIORITY ALERTS:**"
-    insights_start = "**💡 INTELLIGENCE INSIGHTS:**"
-    timestamp_marker = "**Last Updated:"
     
     if breaking_start in content:
-        # Update timestamp
+        # Update timestamp first
         new_timestamp = f"**Last Updated: {news_data['timestamp']}**"
         
         # Build new breaking section
         breaking_section = "**⚡ BREAKING (Last 6 Hours):**\n"
         for news in news_data['breaking']:
-            breaking_section += f"- {news}  \n"
+            breaking_section += f"- {news}\n"
         
-        breaking_section += f"\n{priority_start}\n"
+        breaking_section += f"\n**🔥 HIGH PRIORITY ALERTS:**\n"
         for alert in news_data['priority']:
             breaking_section += f"- {alert}\n"
         
-        breaking_section += f"\n{insights_start}\n"
+        breaking_section += f"\n**💡 INTELLIGENCE INSIGHTS:**\n"
         for insight in news_data['insights']:
-            breaking_section += f"- {insight}  \n"
+            breaking_section += f"- {insight}\n"
         
-        # Replace in content
+        # Replace sections using more flexible regex
         import re
         
         # Update timestamp
@@ -184,9 +181,9 @@ def update_readme_with_news():
             content
         )
         
-        # Update breaking news section
+        # Update entire breaking news section
         pattern = r'(\*\*⚡ BREAKING \(Last 6 Hours\):\*\*.*?)(\n\n<div align="center">)'
-        replacement = breaking_section + r'\2'
+        replacement = breaking_section + r' \2'
         content = re.sub(pattern, replacement, content, flags=re.DOTALL)
         
         # Write back to file
@@ -194,10 +191,19 @@ def update_readme_with_news():
             with open('README.md', 'w', encoding='utf-8') as f:
                 f.write(content)
             print(f"✅ Updated README with fresh M&A intelligence: {news_data['timestamp']}")
-        except:
-            print("❌ Could not write README.md")
+        except Exception as e:
+            print(f"❌ Could not write README.md: {e}")
     else:
         print("❌ Could not find breaking news section in README.md")
+        print("📝 Looking for section starting with:", breaking_start)
+        # Debug: show what sections we found
+        lines_with_breaking = [line for line in content.split('\n') if 'BREAKING' in line or '⚡' in line]
+        if lines_with_breaking:
+            print("🔍 Found these lines with BREAKING or ⚡:")
+            for line in lines_with_breaking:
+                print(f"  - {line.strip()}")
+        else:
+            print("🔍 No lines with BREAKING or ⚡ found")
 
 if __name__ == '__main__':
     print("🚨 Generating fresh M&A intelligence...")
