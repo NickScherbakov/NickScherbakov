@@ -3,7 +3,8 @@
 
 
 
-## 🔍 GitHub M&A Activity TrackerMonitoring M&A activity in IT sector through GitHub repository ownership transfers and corporate acquisitions.
+## 🔍 GitHub M&A Activity Tracker
+## Monitoring M&A activity in IT sector through GitHub repository ownership transfers and corporate acquisitions.
 
 
 
