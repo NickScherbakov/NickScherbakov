@@ -1,4 +1,4 @@
-# 👋 Hello, I'm NickScherbakov
+# 👋 Hello, I'm Nick Scherbakov
 
 <div align="center">
 
