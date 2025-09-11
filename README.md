@@ -2,8 +2,8 @@
 
 <div align="center">
 
-### 🚀 Data Scientist & AI Engineer
-### 💡 Building Intelligent Systems for Tomorrow
+### I'm data scientist & AI engineer
+### and I'm building intelligent systems for tomorrow
 
 ---
 
