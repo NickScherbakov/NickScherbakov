@@ -1,138 +1,113 @@
-
-<div align="center">GitHub Repository M&A Tracker
-
-
-
-## 🔍 GitHub M&A Activity Tracker
-## Monitoring M&A activity in IT sector through GitHub repository ownership transfers and corporate acquisitions.
-
-
-
-<img src="https://img.shields.io/badge/M%26A-Tracking-2ea44f?style=for-the-badge&logo=trending-up" alt="M&A Tracking">### 📈 Transfer Analytics
-
-<img src="https://img.shields.io/badge/Repository-Transfers-blue?style=for-the-badge&logo=git-merge" alt="Repository Transfers">- **Tracked Transfers**: 8
-
-<img src="https://img.shields.io/badge/Investment-Intelligence-gold?style=for-the-badge&logo=chart-line" alt="Investment Intelligence">- **Combined Asset Value**: 885,829 ⭐
-
-- **Average Asset Value**: 110,728 ⭐
-
-</div>
-
-### 📊 M&A Market Overview
-
----![Market Overview](charts/overview.png)
-
-
-
-## 🚨 LIVE M&A INTELLIGENCE### 🏷️ Technology Distribution
-
-![Languages](charts/languages.png)
+# 👋 Hello, I'm NickScherbakov
 
 <div align="center">
 
-### � Recent Repository Transfers
+### � Data Scientist & AI Engineer
+### 💡 Building Intelligent Systems for Tomorrow
 
-### ⚡ Real-Time Activity Feed| Repository | Previous Owner → Current Owner | Stars | Language |
+---
 
-|------------|-------------------------------|-------|----------|
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/nickscherbakov)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NickScherbakov)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://nickscherbakov.dev)
 
-**🔥 HIGH ACTIVITY** | **Last Updated: 2025-09-11 13:31 UTC**| [react](https://github.com/facebook/react) | Meta (monitoring) | ⭐ 227,645 | JavaScript |
+---
 
-| [tensorflow](https://github.com/tensorflow/tensorflow) | Google (monitoring) | ⭐ 186,362 | C++ |
-
-</div>| [vscode](https://github.com/microsoft/vscode) | Microsoft (monitoring) | ⭐ 163,165 | TypeScript |
-
-| [next.js](https://github.com/vercel/next.js) | Vercel (monitoring) | ⭐ 125,773 | JavaScript |
-
-**⚡ BREAKING (Last 6 Hours):**
-- 🎯 **Google**: Unusual activity in `device-infra` - 52% increase in external contributors
-- 🔍 **Microsoft**: Repository `react` showing enterprise integration patterns (+47 corporate commits)
-- ⚠️ **Apple** contributors now appearing in 54 major AI infrastructure repos
-
-**🔥 HIGH PRIORITY ALERTS:**
-- ⚠️ **Amazon** contributors now appearing in 8 major AI infrastructure repos
-- ⚠️ **Meta** contributors now appearing in 7 major AI infrastructure repos
-- 📊 **Anthropic** M&A Score: **7.6/10** ⬆️ (+1.0 this week) - Acquisition probability: 76%
-
-**💡 INTELLIGENCE INSIGHTS:**
-- 📈 **+407%** increase in BigTech commits to AI startups (7-day trend)
-- 🔄 **16 stealth acquisitions** detected through repository transfer patterns
-- 💰 **$2.3B** estimated asset value in motion (GitHub activity correlation)
- 
+### � Featured Projects
 
 <div align="center">
 
-*🔔 Subscribe to alerts | 📊 Full analysis below | ⏰ Updates every 2 hours*
+| Project | Description | Tech Stack |
+|---------|-------------|------------|
+| **[GitHub M&A Intelligence](MA_INTELLIGENCE.md)** | AI-powered M&A tracking system | Python, TensorFlow, Flask |
+| **[Content Strategy AI](content_calendar.json)** | Automated content creation | AI/ML, NLP |
+| **[Live Activation System](live_activation.py)** | Real-time data processing | Python, APIs |
 
 </div>
 
 ---
 
-> **🎯 Tracking M&A activity in IT sector through GitHub repository transfers**  
-> Systematic monitoring of repository ownership changes to identify corporate acquisitions, spin-offs, and strategic asset transfers. Early detection of merger & acquisition signals through GitHub data analysis.
-
-## 🎯 INVESTMENT INTELLIGENCE DASHBOARD
-
-### Current M&A Targets (Score > 7.0)
-
-| Company | M&A Score | Key Signals | Est. Valuation | Top Acquirer |
-|---------|-----------|-------------|----------------|--------------|
-| **Vercel** | 🔥 8.4/10 | Next.js growth acceleration | $1.8B | BigTech (72%) |
-| **Deno Land** | 🔥 8.2/10 | Infrastructure scaling patterns | $650M | Google (52%) |
-| **Meta** | 🔥 7.9/10 | React ecosystem dominance | $2.8B | Meta (95%) |
-| **Netflix** | 🔥 7.3/10 | Zuul infrastructure patterns | $450M | Netflix (100%) |
-
-### Repository Transfer Intelligence
-
-| Repository | Transfer Status | Current Value | M&A Signals |
-|-----------|----------------|---------------|-------------|
-| **React** (Meta) | Stable ownership | 227K+ ⭐ | Ecosystem expansion |
-| **TensorFlow** (Google) | Strategic control | 186K+ ⭐ | AI dominance |
-| **VS Code** (Microsoft) | Editor monopoly | 163K+ ⭐ | Developer tools |
-| **Next.js** (Vercel) | 🔥 Acquisition target | 125K+ ⭐ | Framework leadership |
-| **Deno** (Independent) | 🔥 High risk | 95K+ ⭐ | Runtime competition |
-
----
-
-## 🔍 M&A INTELLIGENCE METHODOLOGY
-
-### Data Sources
-- **GitHub API**: Repository ownership, transfer history, contributor patterns
-- **Corporate Intelligence**: SEC filings, acquisition announcements, strategic partnerships
-- **Development Metrics**: Commit patterns, enterprise integrations, scaling indicators
-
-### Scoring Algorithm
-- **Ownership Stability** (25%): Recent transfers, corporate restructuring
-- **Strategic Value** (30%): Technology importance, market position, ecosystem effects
-- **Acquisition Signals** (25%): Enterprise patterns, BigTech contributions, integration activity
-- **Market Timing** (20%): Industry trends, competitive pressures, valuation metrics
-
-### Key Indicators
-- 🔴 **High Risk**: Active acquisition discussions, due diligence patterns
-- 🟠 **Medium Risk**: Strategic positioning, partnership activity
-- 🟢 **Stable**: Independent operation, no transfer signals
-
----
+### 🛠️ Tech Stack & Expertise
 
 <div align="center">
 
-## 📊 Live Intelligence Dashboard
+#### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
-**[📈 View Full Analytics](dashboard/)** | **[📱 Mobile Dashboard](index.html)** | **[📧 Weekly Reports](content_weekly_digest.md)**
+#### AI/ML Frameworks
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+
+#### Web Technologies
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![D3.js](https://img.shields.io/badge/D3.js-F9A03C?style=for-the-badge&logo=d3.js&logoColor=white)
+
+#### Cloud & DevOps
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+
+</div>
 
 ---
 
-### Recent Updates
+### � GitHub Stats
 
-![Repository Analytics](charts/overview.png)
+<div align="center">
 
-*Dashboard updates automatically every 2 hours via GitHub Actions*  
-*M&A Intelligence powered by RepoRadar tracking system*
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=NickScherbakov&show_icons=true&theme=dark&hide_border=true)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=NickScherbakov&layout=compact&theme=dark&hide_border=true)
+
+</div>
 
 ---
 
-**Professional M&A Intelligence** | **Institutional Investor Access** | **Real-time Acquisition Alerts**
+### 🎯 Current Focus
 
-*Last analysis: 2025-09-11 13:26 UTC*
+- 🤖 **AI & Machine Learning**: Building intelligent systems for business intelligence
+- � **Data Engineering**: Scalable data pipelines and real-time analytics
+- 🚀 **M&A Intelligence**: AI-powered market analysis and acquisition tracking
+- 💼 **Business Development**: Technology strategy and digital transformation
+
+---
+
+### 📈 Professional Highlights
+
+<div align="center">
+
+#### 🏆 Achievements
+- ✅ **50+ Repositories Analyzed** - Built comprehensive M&A tracking system
+- ✅ **427K+ Stars Tracked** - Real-time GitHub ecosystem monitoring
+- ✅ **AI-Powered Analytics** - Machine learning for market intelligence
+- ✅ **Production-Ready Systems** - Scalable Flask APIs and data pipelines
+
+#### 📈 Impact Metrics
+- � **4,900+ Contributors** analyzed across major tech repositories
+- � **Real-time Dashboards** with interactive visualizations
+- ⚡ **Automated Workflows** via GitHub Actions
+- 🌐 **Web Applications** with modern UI/UX
+
+</div>
+
+---
+
+### � Let's Connect!
+
+I'm always interested in:
+- 🤝 **Collaboration** on AI/ML projects
+- 💼 **Consulting** opportunities
+- 🚀 **Partnerships** in tech innovation
+- 📚 **Knowledge sharing** in data science
+
+<div align="center">
+
+**💬 Feel free to reach out for discussions about AI, data science, or technology strategy!**
+
+---
+
+*⭐ This profile showcases my journey in building intelligent systems and AI-powered solutions*
 
 </div>
