@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @NickScherbakov
+- 👋 Hi, I’m Nick Scherbakov (earthling)
 - 👀 I’m interested in peace - friendship - chewing gum
 - 🌱 I’m currently learning this whole Life
 - ⚡ Fun fact: we are all still alive
