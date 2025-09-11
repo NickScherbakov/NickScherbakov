@@ -2,7 +2,7 @@
 
 <div align="center">
 
-### � Data Scientist & AI Engineer
+### 🚀 Data Scientist & AI Engineer
 ### 💡 Building Intelligent Systems for Tomorrow
 
 ---
@@ -13,13 +13,14 @@
 
 ---
 
-### � Featured Projects
+### 📁 Featured Projects
 
 <div align="center">
 
 | Project | Description | Tech Stack |
 |---------|-------------|------------|
 | **[GitHub M&A Intelligence](MA_INTELLIGENCE.md)** | AI-powered M&A tracking system | Python, TensorFlow, Flask |
+| **[Live Dashboard](https://nickscherbakov.github.io/NickScherbakov/)** | Real-time M&A analytics dashboard | HTML, CSS, JavaScript |
 | **[Content Strategy AI](content_calendar.json)** | Automated content creation | AI/ML, NLP |
 | **[Live Activation System](live_activation.py)** | Real-time data processing | Python, APIs |
 
@@ -54,7 +55,7 @@
 
 ---
 
-### � GitHub Stats
+### 📊 GitHub Stats
 
 <div align="center">
 
@@ -68,7 +69,7 @@
 ### 🎯 Current Focus
 
 - 🤖 **AI & Machine Learning**: Building intelligent systems for business intelligence
-- � **Data Engineering**: Scalable data pipelines and real-time analytics
+- 📊 **Data Engineering**: Scalable data pipelines and real-time analytics
 - 🚀 **M&A Intelligence**: AI-powered market analysis and acquisition tracking
 - 💼 **Business Development**: Technology strategy and digital transformation
 
@@ -85,8 +86,8 @@
 - ✅ **Production-Ready Systems** - Scalable Flask APIs and data pipelines
 
 #### 📈 Impact Metrics
-- � **4,900+ Contributors** analyzed across major tech repositories
-- � **Real-time Dashboards** with interactive visualizations
+- 👥 **4,900+ Contributors** analyzed across major tech repositories
+- 📊 **Real-time Dashboards** with interactive visualizations
 - ⚡ **Automated Workflows** via GitHub Actions
 - 🌐 **Web Applications** with modern UI/UX
 
@@ -94,7 +95,7 @@
 
 ---
 
-### � Let's Connect!
+### 🤝 Let's Connect!
 
 I'm always interested in:
 - 🤝 **Collaboration** on AI/ML projects
