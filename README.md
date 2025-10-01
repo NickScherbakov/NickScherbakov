@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Nick Scherbakov (earthling)
 
-- In 1959, Arthur Samuel coined the term machine learning.
-  In his paper, “Some Studies in Machine Learning Using the Game of Checkers”
-  he described machine learning as “programming computers to learn from experience.”
+- ✨ In 1959, Arthur Samuel coined the term machine learning.
+     In his paper, “Some Studies in Machine Learning Using the Game of Checkers”
+     he described machine learning as “programming computers to learn from experience.”
 - 👀 I'm interested in peace - friendship - chewing gum  
 - 🌱 I'm currently learning this whole Life  
 - ⚡ Fun fact: we are all still alive
