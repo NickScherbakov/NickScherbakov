@@ -12,10 +12,10 @@
 
 ---
 
-## 💭 Ежедневная Мысль
+## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Совет дня:** Ожидание первого обновления...
+> 💡 **Tip of the Day:** Security is not an option, it's a necessity. Never commit secrets and API keys to a repository.
 <!-- END_DAILY_TIP -->
 
 ---
