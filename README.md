@@ -7,7 +7,7 @@
 - 🌱 I'm currently learning this whole Life  
 - ⚡ Fun fact: we are all still alive
 - 🔥 By the way: I don’t sell anything, I don’t need work or sponsors
-- ✅ https://nickscherbakov.github.io
+- ✅ https://nickscherbakov.github.io/very-simple-tetris-created-by-Copilot/
 ---
 
 ## 📊 Repository Analytics
