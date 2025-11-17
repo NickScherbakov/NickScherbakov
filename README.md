@@ -8,6 +8,7 @@
 - ⚡ Fun fact: we are all still alive
 - 🔥 By the way: I don’t sell anything, I don’t need work or sponsors
 - ✅ https://nickscherbakov.github.io/very-simple-tetris-created-by-Copilot/
+- 🤝 Хотите участвовать в проекте? Открывайте Issues, предлагайте Pull Requests или просто звёздочку поставьте - буду рад любому участию!
 ---
 
 ## 📊 Repository Analytics
