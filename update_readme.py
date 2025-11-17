@@ -11,16 +11,16 @@ from pathlib import Path
 
 # List of tips related to programming, IT, and personal productivity
 TIPS = [
-    "Код, который не нужно писать — это лучший код. Всегда ищите готовые решения перед тем, как писать свой.",
-    "Делайте коммиты часто и с понятными сообщениями. Ваше будущее 'я' скажет вам спасибо.",
-    "Рефакторинг — это не трата времени, это инвестиция в будущее вашего проекта.",
-    "Изучайте один новый инструмент или технологию каждый месяц. Постоянное обучение — ключ к росту.",
-    "Документируйте код для людей, а не для компьютера. Ясность важнее краткости.",
-    "Тестируйте свой код. Баг, найденный во время разработки, стоит в 10 раз дешевле, чем на продакшене.",
-    "Делайте перерывы. Лучшие решения часто приходят, когда вы не смотрите в монитор.",
-    "Code review — это не критика, а возможность научиться чему-то новому от коллег.",
-    "Автоматизируйте рутину. Если делаете что-то больше двух раз — напишите скрипт.",
-    "Безопасность — это не опция, а необходимость. Никогда не коммитьте секреты и API ключи в репозиторий.",
+    "The code you don't have to write is the best code. Always look for ready-made solutions before writing your own.",
+    "Commit often with clear messages. Your future self will thank you.",
+    "Refactoring is not a waste of time, it's an investment in your project's future.",
+    "Learn one new tool or technology every month. Continuous learning is the key to growth.",
+    "Document code for people, not for computers. Clarity is more important than brevity.",
+    "Test your code. A bug found during development costs 10 times less than in production.",
+    "Take breaks. The best solutions often come when you're not staring at the monitor.",
+    "Code review is not criticism, but an opportunity to learn something new from colleagues.",
+    "Automate routine tasks. If you do something more than twice — write a script.",
+    "Security is not an option, it's a necessity. Never commit secrets and API keys to a repository.",
 ]
 
 # Markers to identify the section in README.md
@@ -31,7 +31,7 @@ END_MARKER = "<!-- END_DAILY_TIP -->"
 def get_random_tip():
     """Select and format a random tip."""
     tip = random.choice(TIPS)
-    return f"\n> 💡 **Совет дня:** {tip}\n"
+    return f"\n> 💡 **Tip of the Day:** {tip}\n"
 
 
 def update_readme(readme_path):
