@@ -15,7 +15,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Document code for people, not for computers. Clarity is more important than brevity.
+> 💡 **Tip of the Day:** Security is not an option, it's a necessity. Never commit secrets and API keys to a repository.
 <!-- END_DAILY_TIP -->
 
 ---
