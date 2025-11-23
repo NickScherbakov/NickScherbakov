@@ -15,7 +15,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Code review is not criticism, but an opportunity to learn something new from colleagues.
+> 💡 **Tip of the Day:** Test your code. A bug found during development costs 10 times less than in production.
 <!-- END_DAILY_TIP -->
 
 ---
