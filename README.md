@@ -15,7 +15,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Test your code. A bug found during development costs 10 times less than in production.
+> 💡 **Tip of the Day:** Document code for people, not for computers. Clarity is more important than brevity.
 <!-- END_DAILY_TIP -->
 
 ---
