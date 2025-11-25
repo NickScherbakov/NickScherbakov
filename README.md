@@ -15,7 +15,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Document code for people, not for computers. Clarity is more important than brevity.
+> 💡 **Tip of the Day:** Automate repetitive tasks. Your time is valuable.
 <!-- END_DAILY_TIP -->
 
 ---
