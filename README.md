@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Automate repetitive tasks. Your time is valuable.
+> 💡 **Tip of the Day:** Certifications can validate skills but aren't everything.
 <!-- END_DAILY_TIP -->
 
 ---
