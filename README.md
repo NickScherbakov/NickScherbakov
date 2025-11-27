@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Certifications can validate skills but aren't everything.
+> 💡 **Tip of the Day:** Learn one new tool or technology every month. Continuous learning is the key to growth.
 <!-- END_DAILY_TIP -->
 
 ---
