@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Data science extracts insights.
+> 💡 **Tip of the Day:** Learn about curiosity. It drives innovation.
 <!-- END_DAILY_TIP -->
 
 ---
