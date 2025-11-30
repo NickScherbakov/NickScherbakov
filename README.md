@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about curiosity. It drives innovation.
+> 💡 **Tip of the Day:** Learn about penetration testing. Find vulnerabilities before attackers do.
 <!-- END_DAILY_TIP -->
 
 ---
