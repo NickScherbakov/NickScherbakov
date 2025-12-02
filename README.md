@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Edge computing brings computation closer to data sources.
+> 💡 **Tip of the Day:** Learn about cloud services: AWS, Azure, Google Cloud.
 <!-- END_DAILY_TIP -->
 
 ---
