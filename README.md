@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about cloud services: AWS, Azure, Google Cloud.
+> 💡 **Tip of the Day:** Security audits should be regular, not one-time.
 <!-- END_DAILY_TIP -->
 
 ---
