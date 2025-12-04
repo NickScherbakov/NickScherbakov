@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Security audits should be regular, not one-time.
+> 💡 **Tip of the Day:** Understand the CAP theorem. Distributed systems have tradeoffs.
 <!-- END_DAILY_TIP -->
 
 ---
