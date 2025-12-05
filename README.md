@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Understand the CAP theorem. Distributed systems have tradeoffs.
+> 💡 **Tip of the Day:** Learn about digital wellness. Technology should serve you, not vice versa.
 <!-- END_DAILY_TIP -->
 
 ---
