@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Transparency builds trust.
+> 💡 **Tip of the Day:** Public speaking improves with practice.
 <!-- END_DAILY_TIP -->
 
 ---
