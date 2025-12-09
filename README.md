@@ -39,7 +39,7 @@
 
 <div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=NickScherbakov&theme=tokyonight&hide_border=true&background=0D1117&stroke=2E9EFF&ring=2E9EFF&fire=FF6B6B&currStreakLabel=2E9EFF&sideNums=C9D1D9&currStreakNum=C9D1D9&dates=8B949E&cache_seconds=86400)
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=NickScherbakov&theme=tokyonight&hide_border=true&background=0D1117&stroke=2E9EFF&ring=2E9EFF&fire=FF6B6B&currStreakLabel=2E9EFF&sideNums=C9D1D9&currStreakNum=2E9EFF&dates=8B949E)
 
 </div>
 
