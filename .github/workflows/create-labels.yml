@@ -1,0 +1,43 @@
+name: Create Required Labels
+
+on:
+  workflow_dispatch:  # Manual trigger only
+
+jobs:
+  create-labels:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - name: Create labels
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Creating labels for followers/stars tracking workflow..."
+          
+          # Create new-follower label (green)
+          gh label create "new-follower" \
+            --repo ${{ github.repository }} \
+            --color "0E8A16" \
+            --description "New follower notification" \
+            --force || echo "Label 'new-follower' already exists"
+          
+          # Create new-star label (yellow)
+          gh label create "new-star" \
+            --repo ${{ github.repository }} \
+            --color "FBCA04" \
+            --description "New star notification" \
+            --force || echo "Label 'new-star' already exists"
+          
+          # Create needs-attention label (red)
+          gh label create "needs-attention" \
+            --repo ${{ github.repository }} \
+            --color "D93F0B" \
+            --description "Requires owner attention" \
+            --force || echo "Label 'needs-attention' already exists"
+          
+          echo ""
+          echo "✅ Label creation complete!"
+          echo ""
+          echo "Verifying labels..."
+          gh label list --repo ${{ github.repository }} | grep -E "(new-follower|new-star|needs-attention)" || echo "Labels created but not showing in verification"
