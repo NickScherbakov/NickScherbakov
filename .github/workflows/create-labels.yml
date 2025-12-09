@@ -1,5 +1,8 @@
 name: Create Required Labels
 
+# Prerequisites: Issues must be enabled in repository settings before running this workflow
+# Go to Settings → Features → Enable "Issues"
+
 on:
   workflow_dispatch:  # Manual trigger only
 

@@ -2,6 +2,16 @@
 
 This directory contains the setup for creating required labels for the followers/stars tracking workflow.
 
+## Prerequisites
+
+⚠️ **IMPORTANT**: Issues must be enabled on the repository before creating labels or running the tracking workflow.
+
+To enable issues:
+1. Go to repository Settings
+2. Scroll down to the "Features" section
+3. Check the "Issues" checkbox
+4. Save changes
+
 ## Required Labels
 
 The following labels are required for the `.github/workflows/track-followers-stars.yml` workflow:
