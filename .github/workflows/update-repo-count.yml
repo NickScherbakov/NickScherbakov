@@ -1,0 +1,44 @@
+name: Update Repository Count
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Запуск каждый день в полночь UTC
+  workflow_dispatch:  # Возможность ручного запуска
+  push:
+    branches:
+      - main
+
+jobs:
+  update-count:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Get original repo count and update README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Подсчитать количество оригинальных (не форкнутых) публичных репозиториев
+          REPO_COUNT=$(gh repo list NickScherbakov --limit 1000 --json isFork --jq '[.[] | select(.isFork == false)] | length')
+          
+          echo "Original repositories count: $REPO_COUNT"
+          
+          # Обновить число в README.md
+          # Ищем паттерн "X+original+projects" (URL-encoded) и заменяем X на актуальное число
+          sed -i "s/[0-9]\++original+projects/${REPO_COUNT}+original+projects/g" README.md
+          
+          # Проверить, были ли изменения
+          if git diff --quiet README.md; then
+            echo "No changes needed"
+            exit 0
+          fi
+          
+          # Закоммитить изменения
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "📊 Update original repositories count to $REPO_COUNT"
+          git push
