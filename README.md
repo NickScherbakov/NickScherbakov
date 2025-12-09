@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Public speaking improves with practice.
+> 💡 **Tip of the Day:** A/B testing requires statistical significance.
 <!-- END_DAILY_TIP -->
 
 ---
