@@ -53,3 +53,7 @@ Thumbs.db
 # Data files (optional - comment out if you want to track data)
 data/
 charts/
+
+# But allow .github/data for tracking followers and stars
+!.github/data/
+!.github/data/*.txt

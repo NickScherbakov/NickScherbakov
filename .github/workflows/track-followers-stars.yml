@@ -1,0 +1,163 @@
+name: Track New Followers and Stars
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Каждые 6 часов
+  workflow_dispatch:  # Ручной запуск
+
+jobs:
+  track-followers:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Track followers and create notifications
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          USERNAME="NickScherbakov"
+          DATA_DIR=".github/data"
+          FOLLOWERS_FILE="$DATA_DIR/followers.txt"
+          
+          mkdir -p "$DATA_DIR"
+          touch "$FOLLOWERS_FILE"
+          
+          # Получить текущий список followers
+          gh api users/$USERNAME/followers --paginate --jq '.[].login' | sort > /tmp/current_followers.txt
+          
+          # Сравнить с предыдущим списком
+          if [ -f "$FOLLOWERS_FILE" ]; then
+            # Найти новых followers
+            NEW_FOLLOWERS=$(comm -13 "$FOLLOWERS_FILE" /tmp/current_followers.txt)
+            
+            if [ -n "$NEW_FOLLOWERS" ]; then
+              echo "New followers found!"
+              
+              # Создать Issue для каждого нового follower
+              for follower in $NEW_FOLLOWERS; do
+                # Получить информацию о пользователе
+                USER_INFO=$(gh api users/$follower --jq '{name: .name, bio: .bio, repos: .public_repos, followers: .followers, location: .location, blog: .blog}')
+                USER_NAME=$(echo "$USER_INFO" | jq -r '.name // "Not specified"')
+                USER_BIO=$(echo "$USER_INFO" | jq -r '.bio // "No bio"')
+                USER_REPOS=$(echo "$USER_INFO" | jq -r '.repos')
+                USER_FOLLOWERS=$(echo "$USER_INFO" | jq -r '.followers')
+                USER_LOCATION=$(echo "$USER_INFO" | jq -r '.location // "Not specified"')
+                USER_BLOG=$(echo "$USER_INFO" | jq -r '.blog // "None"')
+                
+                ISSUE_BODY="## 👋 Новый подписчик: @$follower
+
+### Информация о пользователе:
+| | |
+|---|---|
+| 👤 **Имя** | $USER_NAME |
+| 📍 **Локация** | $USER_LOCATION |
+| 📝 **Bio** | $USER_BIO |
+| 📂 **Репозитории** | $USER_REPOS |
+| 👥 **Подписчики** | $USER_FOLLOWERS |
+| 🔗 **Сайт** | $USER_BLOG |
+
+### Быстрые ссылки:
+- 🏠 [Профиль](https://github.com/$follower)
+- 📚 [Репозитории](https://github.com/$follower?tab=repositories)
+- ⭐ [Starred репозитории](https://github.com/$follower?tab=stars)
+
+---
+*Рассмотрите возможность подписаться в ответ и поставить звёзды на интересные проекты!* ✨"
+
+                gh issue create \
+                  --title "🌟 Новый подписчик: $follower" \
+                  --body "$ISSUE_BODY" \
+                  --label "new-follower,needs-attention"
+                  
+                echo "Created issue for new follower: $follower"
+              done
+            fi
+          fi
+          
+          # Сохранить текущий список
+          cp /tmp/current_followers.txt "$FOLLOWERS_FILE"
+          
+          # Закоммитить обновлённый список
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "$DATA_DIR"
+          git diff --staged --quiet || git commit -m "📊 Update followers tracking data"
+          git push || true
+
+  track-stars:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Track stargazers and create notifications
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          USERNAME="NickScherbakov"
+          DATA_DIR=".github/data"
+          STARS_FILE="$DATA_DIR/stargazers.txt"
+          
+          mkdir -p "$DATA_DIR"
+          touch "$STARS_FILE"
+          
+          # Получить stargazers для профильного репозитория
+          gh api repos/$USERNAME/$USERNAME/stargazers --paginate --jq '.[].login' | sort > /tmp/current_stars.txt
+          
+          # Сравнить с предыдущим списком
+          if [ -f "$STARS_FILE" ]; then
+            NEW_STARGAZERS=$(comm -13 "$STARS_FILE" /tmp/current_stars.txt)
+            
+            if [ -n "$NEW_STARGAZERS" ]; then
+              echo "New stargazers found!"
+              
+              for stargazer in $NEW_STARGAZERS; do
+                USER_INFO=$(gh api users/$stargazer --jq '{name: .name, bio: .bio, repos: .public_repos, followers: .followers, location: .location}')
+                USER_NAME=$(echo "$USER_INFO" | jq -r '.name // "Not specified"')
+                USER_BIO=$(echo "$USER_INFO" | jq -r '.bio // "No bio"')
+                USER_REPOS=$(echo "$USER_INFO" | jq -r '.repos')
+                USER_LOCATION=$(echo "$USER_INFO" | jq -r '.location // "Not specified"')
+                
+                ISSUE_BODY="## ⭐ Новая звезда от: @$stargazer
+
+### Информация о пользователе:
+| | |
+|---|---|
+| 👤 **Имя** | $USER_NAME |
+| 📍 **Локация** | $USER_LOCATION |
+| 📝 **Bio** | $USER_BIO |
+| 📂 **Репозитории** | $USER_REPOS |
+
+### Быстрые ссылки:
+- 🏠 [Профиль](https://github.com/$stargazer)
+- 📚 [Репозитории](https://github.com/$stargazer?tab=repositories)
+- ⭐ [Что понравилось этому пользователю](https://github.com/$stargazer?tab=stars)
+
+---
+*Этот пользователь оценил ваш профиль! Рассмотрите возможность поставить звёзды на его проекты!* 🌟"
+
+                gh issue create \
+                  --title "⭐ Новая звезда от: $stargazer" \
+                  --body "$ISSUE_BODY" \
+                  --label "new-star,needs-attention"
+                  
+                echo "Created issue for new stargazer: $stargazer"
+              done
+            fi
+          fi
+          
+          cp /tmp/current_stars.txt "$STARS_FILE"
+          
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase || true
+          git add "$DATA_DIR"
+          git diff --staged --quiet || git commit -m "📊 Update stargazers tracking data"
+          git push || true
