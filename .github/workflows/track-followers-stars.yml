@@ -84,6 +84,7 @@ jobs:
           # Закоммитить обновлённый список
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase || true
           git add "$DATA_DIR"
           git diff --staged --quiet || git commit -m "📊 Update followers tracking data"
           git push || true
