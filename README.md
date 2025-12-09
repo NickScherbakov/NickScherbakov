@@ -31,15 +31,15 @@
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=NickScherbakov&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&count_private=false)
+![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=NickScherbakov&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&count_private=false&cache_seconds=86400)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=NickScherbakov&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&text_color=C9D1D9&exclude_repo=petals,LangChain-Tutorial,llama-gpt,LocalAI,langchain,petals.dev)
+![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=NickScherbakov&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&text_color=C9D1D9&exclude_repo=petals,LangChain-Tutorial,llama-gpt,LocalAI,langchain,petals.dev&cache_seconds=86400)
 
 </div>
 
 <div align="center">
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=NickScherbakov&theme=tokyonight&hide_border=true&background=0D1117&stroke=2E9EFF&ring=2E9EFF&fire=FF6B6B&currStreakLabel=2E9EFF&sideNums=C9D1D9&currStreakNum=C9D1D9&dates=8B949E)
+![GitHub Streak](https://streak-stats.demolab.com/?user=NickScherbakov&theme=tokyonight&hide_border=true&background=0D1117&stroke=2E9EFF&ring=2E9EFF&fire=FF6B6B&currStreakLabel=2E9EFF&sideNums=C9D1D9&currStreakNum=C9D1D9&dates=8B949E&cache_seconds=86400)
 
 </div>
 
@@ -49,14 +49,14 @@
 
 <div align="center">
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NickScherbakov&repo=very-simple-tetris-created-by-Copilot&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9)](https://github.com/NickScherbakov/very-simple-tetris-created-by-Copilot)  
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NickScherbakov&repo=bridge-rescue-archive&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9)](https://github.com/NickScherbakov/bridge-rescue-archive)  
+[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=very-simple-tetris-created-by-Copilot&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&cache_seconds=86400)](https://github.com/NickScherbakov/very-simple-tetris-created-by-Copilot)  
+[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=bridge-rescue-archive&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&cache_seconds=86400)](https://github.com/NickScherbakov/bridge-rescue-archive)  
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NickScherbakov&repo=NickScherbakov&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9)](https://github.com/NickScherbakov/NickScherbakov)  
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NickScherbakov&repo=GC-Forged-Pylot&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9)](https://github.com/NickScherbakov/GC-Forged-Pylot)  
+[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=NickScherbakov&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&cache_seconds=86400)](https://github.com/NickScherbakov/NickScherbakov)  
+[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=GC-Forged-Pylot&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&cache_seconds=86400)](https://github.com/NickScherbakov/GC-Forged-Pylot)  
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NickScherbakov&repo=VanyaVPN-installer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9)](https://github.com/NickScherbakov/VanyaVPN-installer)  
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=NickScherbakov&repo=Who-Are-You-Without-the-CLI-&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9)](https://github.com/NickScherbakov/Who-Are-You-Without-the-CLI-)
+[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=VanyaVPN-installer&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&cache_seconds=86400)](https://github.com/NickScherbakov/VanyaVPN-installer)  
+[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=Who-Are-You-Without-the-CLI-&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=C9D1D9&cache_seconds=86400)](https://github.com/NickScherbakov/Who-Are-You-Without-the-CLI-)
 
 </div>
 
