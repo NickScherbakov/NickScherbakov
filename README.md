@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** A/B testing requires statistical significance.
+> 💡 **Tip of the Day:** Learn about statistics. It's the foundation of data analysis.
 <!-- END_DAILY_TIP -->
 
 ---
