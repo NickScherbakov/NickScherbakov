@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about statistics. It's the foundation of data analysis.
+> 💡 **Tip of the Day:** Code formatters remove style debates. Use them.
 <!-- END_DAILY_TIP -->
 
 ---
