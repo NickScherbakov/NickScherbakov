@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Code formatters remove style debates. Use them.
+> 💡 **Tip of the Day:** Learn about luck. You can increase your surface area.
 <!-- END_DAILY_TIP -->
 
 ---
