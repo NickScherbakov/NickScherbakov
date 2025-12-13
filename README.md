@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about luck. You can increase your surface area.
+> 💡 **Tip of the Day:** Learn to say no. You can't do everything.
 <!-- END_DAILY_TIP -->
 
 ---
