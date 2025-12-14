@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn to say no. You can't do everything.
+> 💡 **Tip of the Day:** Written communication should be clear and concise.
 <!-- END_DAILY_TIP -->
 
 ---
