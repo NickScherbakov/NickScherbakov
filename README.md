@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Written communication should be clear and concise.
+> 💡 **Tip of the Day:** Accessibility is not optional. Build for everyone.
 <!-- END_DAILY_TIP -->
 
 ---
