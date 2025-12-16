@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Accessibility is not optional. Build for everyone.
+> 💡 **Tip of the Day:** Sleep is not optional. It's when your brain consolidates learning.
 <!-- END_DAILY_TIP -->
 
 ---
