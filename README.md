@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Sleep is not optional. It's when your brain consolidates learning.
+> 💡 **Tip of the Day:** Imposter syndrome is common. You're not alone.
 <!-- END_DAILY_TIP -->
 
 ---
