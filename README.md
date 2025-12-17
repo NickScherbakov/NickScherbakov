@@ -25,7 +25,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=⭐+Total+Stars%3A+Loading...;🍴+Total+Forks%3A+Calculating...;📂+Public+Repositories%3A+54+original+projects;💻+Primary+Languages%3A+Python,+JavaScript,+TypeScript;🔥+Commit+Activity%3A+Daily+updates;📈+Real-time+stats+loading...&font=Fira%20Code&size=22&duration=4000&pause=1000&color=2E9EFF&center=true&vCenter=true&width=800&height=60)](https://github.com/NickScherbakov)
+[![Typing SVG](https://readme-typing-svg.demolab.com/?lines=⭐+Total+Stars%3A+Loading...;🍴+Total+Forks%3A+Calculating...;📂+Public+Repositories%3A+55+original+projects;💻+Primary+Languages%3A+Python,+JavaScript,+TypeScript;🔥+Commit+Activity%3A+Daily+updates;📈+Real-time+stats+loading...&font=Fira%20Code&size=22&duration=4000&pause=1000&color=2E9EFF&center=true&vCenter=true&width=800&height=60)](https://github.com/NickScherbakov)
 
 </div>
 
