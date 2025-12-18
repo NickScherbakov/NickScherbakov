@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Imposter syndrome is common. You're not alone.
+> 💡 **Tip of the Day:** Use environment variables for configuration, not hardcoded values.
 <!-- END_DAILY_TIP -->
 
 ---
