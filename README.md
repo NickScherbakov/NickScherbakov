@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Use environment variables for configuration, not hardcoded values.
+> 💡 **Tip of the Day:** Smart contracts automate agreements.
 <!-- END_DAILY_TIP -->
 
 ---
