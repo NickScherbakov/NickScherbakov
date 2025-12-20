@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Smart contracts automate agreements.
+> 💡 **Tip of the Day:** Product management defines what to build.
 <!-- END_DAILY_TIP -->
 
 ---
