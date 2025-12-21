@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Product management defines what to build.
+> 💡 **Tip of the Day:** Prototypes validate ideas cheaply.
 <!-- END_DAILY_TIP -->
 
 ---
