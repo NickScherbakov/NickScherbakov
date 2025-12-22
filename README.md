@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Prototypes validate ideas cheaply.
+> 💡 **Tip of the Day:** Composition over inheritance. Favor has-a over is-a relationships.
 <!-- END_DAILY_TIP -->
 
 ---
