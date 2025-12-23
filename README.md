@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Composition over inheritance. Favor has-a over is-a relationships.
+> 💡 **Tip of the Day:** Learn about support. Happy customers become advocates.
 <!-- END_DAILY_TIP -->
 
 ---
