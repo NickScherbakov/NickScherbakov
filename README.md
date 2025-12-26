@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Images should be optimized. Large files slow page loads.
+> 💡 **Tip of the Day:** Give constructive feedback. Be specific and kind.
 <!-- END_DAILY_TIP -->
 
 ---
