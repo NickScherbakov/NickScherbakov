@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Give constructive feedback. Be specific and kind.
+> 💡 **Tip of the Day:** Race conditions are subtle. Synchronize access to shared resources.
 <!-- END_DAILY_TIP -->
 
 ---
