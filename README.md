@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about leadership. It's influence, not just authority.
+> 💡 **Tip of the Day:** Code review is not criticism, but an opportunity to learn something new from colleagues.
 <!-- END_DAILY_TIP -->
 
 ---
