@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Reflect regularly. What's working? What isn't?
+> 💡 **Tip of the Day:** Trust is earned through consistency.
 <!-- END_DAILY_TIP -->
 
 ---
