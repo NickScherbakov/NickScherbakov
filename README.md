@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Trust is earned through consistency.
+> 💡 **Tip of the Day:** Perfectionism is the enemy of done.
 <!-- END_DAILY_TIP -->
 
 ---
