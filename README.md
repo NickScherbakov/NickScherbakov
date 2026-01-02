@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Perfectionism is the enemy of done.
+> 💡 **Tip of the Day:** Pivot when necessary. Persistence in wrong direction is waste.
 <!-- END_DAILY_TIP -->
 
 ---
