@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Pivot when necessary. Persistence in wrong direction is waste.
+> 💡 **Tip of the Day:** Get feedback early. It's cheaper to change direction early.
 <!-- END_DAILY_TIP -->
 
 ---
