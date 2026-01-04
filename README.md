@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Get feedback early. It's cheaper to change direction early.
+> 💡 **Tip of the Day:** Learn about OWASP Top 10. These are the most critical security risks.
 <!-- END_DAILY_TIP -->
 
 ---
