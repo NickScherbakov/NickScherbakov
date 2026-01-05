@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about OWASP Top 10. These are the most critical security risks.
+> 💡 **Tip of the Day:** Deploy often, deploy small. Small changes are easier to debug.
 <!-- END_DAILY_TIP -->
 
 ---
