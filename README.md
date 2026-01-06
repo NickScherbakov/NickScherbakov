@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Deploy often, deploy small. Small changes are easier to debug.
+> 💡 **Tip of the Day:** Privacy is a human right. Respect user data.
 <!-- END_DAILY_TIP -->
 
 ---
