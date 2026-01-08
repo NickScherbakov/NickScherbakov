@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Promises simplify callback hell.
+> 💡 **Tip of the Day:** Learn about interviews. Preparation matters.
 <!-- END_DAILY_TIP -->
 
 ---
