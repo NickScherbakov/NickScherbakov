@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about interviews. Preparation matters.
+> 💡 **Tip of the Day:** Privacy by design builds privacy into systems from the start.
 <!-- END_DAILY_TIP -->
 
 ---
