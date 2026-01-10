@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Privacy by design builds privacy into systems from the start.
+> 💡 **Tip of the Day:** Mentorship accelerates growth. Find mentors and mentor others.
 <!-- END_DAILY_TIP -->
 
 ---
