@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Mentorship accelerates growth. Find mentors and mentor others.
+> 💡 **Tip of the Day:** Learn about color theory and contrast for readability.
 <!-- END_DAILY_TIP -->
 
 ---
