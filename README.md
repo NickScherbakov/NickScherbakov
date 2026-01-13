@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Scrum provides structure for Agile teams.
+> 💡 **Tip of the Day:** Social skills build relationships.
 <!-- END_DAILY_TIP -->
 
 ---
