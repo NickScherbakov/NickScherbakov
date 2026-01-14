@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Social skills build relationships.
+> 💡 **Tip of the Day:** Performance matters, but correctness matters more.
 <!-- END_DAILY_TIP -->
 
 ---
