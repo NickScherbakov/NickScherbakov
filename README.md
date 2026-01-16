@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** VPNs create secure tunnels over untrusted networks.
+> 💡 **Tip of the Day:** Learn about penetration testing. Find vulnerabilities before attackers do.
 <!-- END_DAILY_TIP -->
 
 ---
