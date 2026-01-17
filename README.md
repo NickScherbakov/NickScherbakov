@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about penetration testing. Find vulnerabilities before attackers do.
+> 💡 **Tip of the Day:** Mission and values guide decisions.
 <!-- END_DAILY_TIP -->
 
 ---
