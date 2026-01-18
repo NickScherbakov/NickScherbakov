@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Mission and values guide decisions.
+> 💡 **Tip of the Day:** Learn about lazy loading. Load content as needed.
 <!-- END_DAILY_TIP -->
 
 ---
