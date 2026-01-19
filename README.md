@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about lazy loading. Load content as needed.
+> 💡 **Tip of the Day:** Least privilege principle: grant minimum necessary permissions.
 <!-- END_DAILY_TIP -->
 
 ---
