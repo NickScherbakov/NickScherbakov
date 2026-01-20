@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Least privilege principle: grant minimum necessary permissions.
+> 💡 **Tip of the Day:** Total compensation includes salary, equity, benefits.
 <!-- END_DAILY_TIP -->
 
 ---
