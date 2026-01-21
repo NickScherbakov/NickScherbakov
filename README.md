@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Total compensation includes salary, equity, benefits.
+> 💡 **Tip of the Day:** Caching is powerful but can cause subtle bugs.
 <!-- END_DAILY_TIP -->
 
 ---
