@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Caching is powerful but can cause subtle bugs.
+> 💡 **Tip of the Day:** Learn about sharding. It scales databases horizontally.
 <!-- END_DAILY_TIP -->
 
 ---
