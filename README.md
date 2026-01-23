@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about sharding. It scales databases horizontally.
+> 💡 **Tip of the Day:** Open source contributions build your portfolio.
 <!-- END_DAILY_TIP -->
 
 ---
