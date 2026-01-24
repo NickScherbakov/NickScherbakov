@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Open source contributions build your portfolio.
+> 💡 **Tip of the Day:** Sunk cost fallacy keeps you invested in bad decisions.
 <!-- END_DAILY_TIP -->
 
 ---
