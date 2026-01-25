@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Sunk cost fallacy keeps you invested in bad decisions.
+> 💡 **Tip of the Day:** Learn about ORMs. They simplify database access but can hide performance issues.
 <!-- END_DAILY_TIP -->
 
 ---
