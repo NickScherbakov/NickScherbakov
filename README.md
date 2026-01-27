@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about IPv6. IPv4 addresses are running out.
+> 💡 **Tip of the Day:** Networking builds relationships. Attend meetups and conferences.
 <!-- END_DAILY_TIP -->
 
 ---
