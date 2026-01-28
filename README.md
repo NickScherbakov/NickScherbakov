@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Networking builds relationships. Attend meetups and conferences.
+> 💡 **Tip of the Day:** Prototypes test ideas cheaply.
 <!-- END_DAILY_TIP -->
 
 ---
