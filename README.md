@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Prototypes test ideas cheaply.
+> 💡 **Tip of the Day:** Learn about compliance: GDPR, HIPAA, PCI-DSS.
 <!-- END_DAILY_TIP -->
 
 ---
