@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about ORMs. They simplify database access but can hide performance issues.
+> 💡 **Tip of the Day:** Encapsulation protects data. Make fields private, expose through methods.
 <!-- END_DAILY_TIP -->
 
 ---
