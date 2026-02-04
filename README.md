@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Immutability prevents many bugs.
+> 💡 **Tip of the Day:** Understand HTTP status codes. 200, 404, 500 are just the beginning.
 <!-- END_DAILY_TIP -->
 
 ---
