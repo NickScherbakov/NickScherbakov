@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Master your IDE. Tools make you productive.
+> 💡 **Tip of the Day:** DNS is the internet's phone book. Understand how it works.
 <!-- END_DAILY_TIP -->
 
 ---
