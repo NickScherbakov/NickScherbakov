@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** DNS is the internet's phone book. Understand how it works.
+> 💡 **Tip of the Day:** Spaced repetition aids long-term retention.
 <!-- END_DAILY_TIP -->
 
 ---
