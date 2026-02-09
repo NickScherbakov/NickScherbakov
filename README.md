@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Spaced repetition aids long-term retention.
+> 💡 **Tip of the Day:** Learn about work-life balance. Burnout helps no one.
 <!-- END_DAILY_TIP -->
 
 ---
