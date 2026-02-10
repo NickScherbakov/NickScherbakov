@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about work-life balance. Burnout helps no one.
+> 💡 **Tip of the Day:** Product management defines what to build.
 <!-- END_DAILY_TIP -->
 
 ---
