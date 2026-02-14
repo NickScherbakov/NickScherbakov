@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** The code you don't have to write is the best code. Always look for ready-made solutions before writing your own.
+> 💡 **Tip of the Day:** Error tracking services catch exceptions in production.
 <!-- END_DAILY_TIP -->
 
 ---
