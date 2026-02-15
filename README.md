@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Error tracking services catch exceptions in production.
+> 💡 **Tip of the Day:** Twitter connects you with communities.
 <!-- END_DAILY_TIP -->
 
 ---
