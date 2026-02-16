@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Twitter connects you with communities.
+> 💡 **Tip of the Day:** Learn about cognitive biases. They affect decision-making.
 <!-- END_DAILY_TIP -->
 
 ---
