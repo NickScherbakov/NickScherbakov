@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about time zones. They're more complex than you think.
+> 💡 **Tip of the Day:** Logs should be structured and searchable.
 <!-- END_DAILY_TIP -->
 
 ---
