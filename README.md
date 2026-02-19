@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Logs should be structured and searchable.
+> 💡 **Tip of the Day:** Empathy makes you a better teammate.
 <!-- END_DAILY_TIP -->
 
 ---
