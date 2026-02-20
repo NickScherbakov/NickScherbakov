@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Empathy makes you a better teammate.
+> 💡 **Tip of the Day:** Video calls are useful but tiring. Balance them with async work.
 <!-- END_DAILY_TIP -->
 
 ---
