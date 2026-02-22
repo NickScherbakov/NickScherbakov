@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Analytics reveal how users actually use your app.
+> 💡 **Tip of the Day:** Correlation does not imply causation.
 <!-- END_DAILY_TIP -->
 
 ---
