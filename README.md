@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Correlation does not imply causation.
+> 💡 **Tip of the Day:** Consistency beats intensity. Daily progress accumulates.
 <!-- END_DAILY_TIP -->
 
 ---
