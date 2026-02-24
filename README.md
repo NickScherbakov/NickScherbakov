@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Consistency beats intensity. Daily progress accumulates.
+> 💡 **Tip of the Day:** APIs should be versioned. Breaking changes need new versions.
 <!-- END_DAILY_TIP -->
 
 ---
