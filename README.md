@@ -16,7 +16,7 @@
 ## 💭 Daily Thought
 
 <!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** APIs should be versioned. Breaking changes need new versions.
+> 💡 **Tip of the Day:** Delegate when possible. It scales your impact.
 <!-- END_DAILY_TIP -->
 
 ---
