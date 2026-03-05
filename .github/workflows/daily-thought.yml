@@ -1,0 +1,84 @@
+name: Daily Thought Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily-thought:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch quote and update README
+        run: |
+          python3 - <<'EOF'
+          import urllib.request
+          import json
+          import re
+
+          # Fetch a random quote from ZenQuotes API
+          url = "https://zenquotes.io/api/random"
+          try:
+              with urllib.request.urlopen(url, timeout=10) as response:
+                  data = json.loads(response.read())
+          except Exception as e:
+              print(f"Failed to fetch quote: {e}")
+              raise SystemExit(1)
+
+          if not isinstance(data, list) or not data:
+              print("Unexpected API response format")
+              raise SystemExit(1)
+
+          quote = data[0].get('q', '').strip()
+          author = data[0].get('a', 'Unknown').strip()
+
+          if not quote:
+              print("Empty quote returned by API")
+              raise SystemExit(1)
+
+          # Build replacement block
+          new_block = (
+              "<!-- daily-thought-start -->\n"
+              f'> "{quote}"\n'
+              ">\n"
+              f"> — *{author}*\n"
+              "<!-- daily-thought-end -->"
+          )
+
+          # Replace content between markers in README.md
+          with open("README.md", "r", encoding="utf-8") as f:
+              content = f.read()
+
+          content = re.sub(
+              r"<!-- daily-thought-start -->.*?<!-- daily-thought-end -->",
+              new_block,
+              content,
+              flags=re.DOTALL,
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(content)
+
+          print(f"Updated daily thought: {quote} — {author}")
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "🧠 Update daily thought [automated]"
+            git push
+          fi
