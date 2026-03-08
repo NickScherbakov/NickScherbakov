@@ -21,6 +21,16 @@
 
 ---
 
+## 🧠 Daily Thought
+
+<!-- daily-thought-start -->
+> "The only way to do great work is to love what you do."
+>
+> — *Steve Jobs*
+<!-- daily-thought-end -->
+
+---
+
 ## 📊 Repository Analytics
 
 <div align="center">
