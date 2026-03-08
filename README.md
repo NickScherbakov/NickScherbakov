@@ -13,14 +13,6 @@
 
 ---
 
-## 💭 Daily Thought
-
-<!-- START_DAILY_TIP -->
-> 💡 **Tip of the Day:** Learn about open source. Contributing helps you and the community.
-<!-- END_DAILY_TIP -->
-
----
-
 ## 🧠 Daily Thought
 
 <!-- daily-thought-start -->
