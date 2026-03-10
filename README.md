@@ -16,9 +16,9 @@
 ## 🧠 Daily Thought
 
 <!-- daily-thought-start -->
-> "The only way to do great work is to love what you do."
+> "Somewhere, something incredible is waiting to be known."
 >
-> — *Steve Jobs*
+> — *Carl Sagan*
 <!-- daily-thought-end -->
 
 ---
