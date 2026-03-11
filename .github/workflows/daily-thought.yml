@@ -2,7 +2,7 @@ name: Daily Thought Update
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '37 9 * * *'
   workflow_dispatch:
 
 permissions:
@@ -91,8 +91,10 @@ jobs:
               print(f"Using built-in fallback quote: {quote} — {author}")
 
           # Build replacement block
+          today = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
           new_block = (
               "<!-- daily-thought-start -->\n"
+              f"<!-- date: {today} -->\n"
               f'> "{quote}"\n'
               ">\n"
               f"> — *{author}*\n"
@@ -125,5 +127,6 @@ jobs:
             echo "No changes to commit"
           else
             git commit -m "🧠 Update daily thought [automated]"
+            git pull --rebase
             git push
           fi
