@@ -1,41 +1,46 @@
-name: Daily Tip Update
+name: Daily Thought Update (backup)
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC
-    - cron: '0 0 * * *'
+    # Primary trigger at 00:05 UTC.  Acts as a redundant backup: if
+    # daily-thought.yml (09:37 UTC) already ran and committed today's thought,
+    # this run will detect no changes via the <!-- date: --> comment and exit
+    # without creating a duplicate commit.  Having two scheduled triggers
+    # increases reliability in case GitHub Actions delays one workflow.
+    - cron: '5 0 * * *'
   workflow_dispatch: # Allows manual trigger for testing
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
-    
+
     permissions:
       contents: write
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-    
+
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-    
+
     - name: Run update script
       run: |
         python update_readme.py
-    
+
     - name: Commit and push changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Actions Bot"
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
         git add README.md
         if git diff --staged --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "💡 Update daily tip [automated]"
+          git commit -m "🧠 Update daily thought [automated]"
+          git pull --rebase
           git push
         fi
