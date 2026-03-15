@@ -18,105 +18,13 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Fetch quote and update README
-        run: |
-          python3 - <<'EOF'
-          import urllib.request
-          import json
-          import re
-          import datetime
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-          # Built-in list of inspirational quotes for deterministic fallback
-          QUOTES = [
-              {"text": "Imagination is more important than knowledge.", "author": "Albert Einstein"},
-              {"text": "The present is theirs; the future, for which I really worked, is mine.", "author": "Nikola Tesla"},
-              {"text": "Nothing in life is to be feared, only to be understood.", "author": "Marie Curie"},
-              {"text": "The Analytical Engine weaves algebraical patterns just as the Jacquard loom weaves flowers and leaves.", "author": "Ada Lovelace"},
-              {"text": "A journey of a thousand miles begins with a single step.", "author": "Lao Tzu"},
-              {"text": "You have power over your mind, not outside events. Realize this, and you will find strength.", "author": "Marcus Aurelius"},
-              {"text": "Difficulties strengthen the mind, as labor does the body.", "author": "Seneca"},
-              {"text": "It does not matter how slowly you go as long as you do not stop.", "author": "Confucius"},
-              {"text": "Learning never exhausts the mind.", "author": "Leonardo da Vinci"},
-              {"text": "If I have seen further, it is by standing on the shoulders of giants.", "author": "Isaac Newton"},
-              {"text": "Somewhere, something incredible is waiting to be known.", "author": "Carl Sagan"},
-              {"text": "We can only see a short distance ahead, but we can see plenty there that needs to be done.", "author": "Alan Turing"},
-              {"text": "The most dangerous phrase in the language is 'We've always done it this way'.", "author": "Grace Hopper"},
-              {"text": "The only way to do great work is to love what you do.", "author": "Steve Jobs"},
-              {"text": "The first principle is that you must not fool yourself, and you are the easiest person to fool.", "author": "Richard Feynman"},
-              {"text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit.", "author": "Aristotle"},
-              {"text": "The only true wisdom is in knowing you know nothing.", "author": "Socrates"},
-              {"text": "All truths are easy to understand once they are discovered; the point is to discover them.", "author": "Galileo Galilei"},
-              {"text": "An expert is a person who has made all the mistakes that can be made in a very narrow field.", "author": "Niels Bohr"},
-              {"text": "Not only is the Universe stranger than we think, it is stranger than we can think.", "author": "Werner Heisenberg"},
-              {"text": "The good life is one inspired by love and guided by knowledge.", "author": "Bertrand Russell"},
-              {"text": "He who has a why to live can bear almost any how.", "author": "Friedrich Nietzsche"},
-              {"text": "I think, therefore I am.", "author": "René Descartes"},
-              {"text": "Perfect is the enemy of good.", "author": "Voltaire"},
-              {"text": "Give me six hours to chop down a tree and I will spend the first four sharpening the axe.", "author": "Abraham Lincoln"},
-              {"text": "Success is not final, failure is not fatal: it is the courage to continue that counts.", "author": "Winston Churchill"},
-              {"text": "Do what you can, with what you have, where you are.", "author": "Theodore Roosevelt"},
-              {"text": "Be the change that you wish to see in the world.", "author": "Mahatma Gandhi"},
-              {"text": "It always seems impossible until it's done.", "author": "Nelson Mandela"},
-              {"text": "In the middle of every difficulty lies opportunity.", "author": "Albert Einstein"},
-              {"text": "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", "author": "Albert Einstein"},
-              {"text": "Programs must be written for people to read, and only incidentally for machines to execute.", "author": "Harold Abelson"},
-          ]
-
-          def get_fallback_quote():
-              day_of_year = int(datetime.datetime.now(datetime.timezone.utc).strftime('%j'))
-              return QUOTES[day_of_year % len(QUOTES)]
-
-          # Try to fetch a random quote from ZenQuotes API
-          quote = None
-          author = None
-          url = "https://zenquotes.io/api/random"
-          try:
-              with urllib.request.urlopen(url, timeout=10) as response:
-                  data = json.loads(response.read())
-              if isinstance(data, list) and data:
-                  q = data[0].get('q', '').strip()
-                  a = data[0].get('a', '').strip()
-                  if q and a:
-                      quote = q
-                      author = a
-                      print(f"Fetched quote from ZenQuotes API: {quote} — {author}")
-          except Exception as e:
-              print(f"Failed to fetch from ZenQuotes API: {e}. Using built-in fallback.")
-
-          # Fall back to deterministic built-in quote if API failed
-          if not quote:
-              fallback = get_fallback_quote()
-              quote = fallback["text"]
-              author = fallback["author"]
-              print(f"Using built-in fallback quote: {quote} — {author}")
-
-          # Build replacement block
-          today = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
-          new_block = (
-              "<!-- daily-thought-start -->\n"
-              f"<!-- date: {today} -->\n"
-              f'> "{quote}"\n'
-              ">\n"
-              f"> — *{author}*\n"
-              "<!-- daily-thought-end -->"
-          )
-
-          # Replace content between markers in README.md
-          with open("README.md", "r", encoding="utf-8") as f:
-              content = f.read()
-
-          content = re.sub(
-              r"<!-- daily-thought-start -->.*?<!-- daily-thought-end -->",
-              new_block,
-              content,
-              flags=re.DOTALL,
-          )
-
-          with open("README.md", "w", encoding="utf-8") as f:
-              f.write(content)
-
-          print(f"Updated daily thought: {quote} — {author}")
-          EOF
+      - name: Update daily thought
+        run: python update_readme.py
 
       - name: Commit and push changes
         run: |
@@ -130,3 +38,4 @@ jobs:
             git pull --rebase
             git push
           fi
+

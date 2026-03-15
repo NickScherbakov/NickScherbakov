@@ -16,9 +16,10 @@
 ## 🧠 Daily Thought
 
 <!-- daily-thought-start -->
-> "Somewhere, something incredible is waiting to be known."
+<!-- date: 2026-03-14 -->
+> "Side effects should be isolated and explicit."
 >
-> — *Carl Sagan*
+> — *Programming Wisdom*
 <!-- daily-thought-end -->
 
 ---

@@ -1,11 +1,19 @@
 #!/usr/bin/env python3
 """
-Script to update README.md with a random daily tip/advice.
-Updates content between <!-- START_DAILY_TIP --> and <!-- END_DAILY_TIP --> markers.
+Script to update README.md with a daily thought (quote or tip).
+
+Updates content between <!-- daily-thought-start --> and <!-- daily-thought-end -->
+markers.  Selection is deterministic: the same thought is shown for the entire day
+(based on day-of-year), so concurrent workflow runs never produce conflicting commits.
+
+Primary source: ZenQuotes API (https://zenquotes.io/api/today).
+Fallback: built-in QUOTES list selected by day-of-year index.
 """
 
-import random
+import datetime
+import json
 import re
+import urllib.request
 from pathlib import Path
 
 
@@ -446,84 +454,128 @@ TIPS = [
     "Stay curious. Learning never ends.",
 ]
 
-# Markers to identify the section in README.md
-START_MARKER = "<!-- START_DAILY_TIP -->"
-END_MARKER = "<!-- END_DAILY_TIP -->"
+# Markers that delimit the Daily Thought section in README.md
+START_MARKER = "<!-- daily-thought-start -->"
+END_MARKER = "<!-- daily-thought-end -->"
 
 
-def get_random_tip():
-    """Select and format a random tip."""
-    tip = random.choice(TIPS)
-    return f"\n> 💡 **Tip of the Day:** {tip}\n"
+def _get_fallback_thought():
+    """
+    Return a deterministic (quote, author) pair for today using the TIPS list.
+
+    The index is derived from the current UTC day-of-year (1–366) modulo the
+    length of TIPS, so the selection cycles through the list and wraps around.
+    The same entry is returned for any call made on the same UTC calendar day.
+    """
+    day_index = datetime.datetime.now(datetime.timezone.utc).timetuple().tm_yday
+    tip = TIPS[day_index % len(TIPS)]
+    return tip, "Programming Wisdom"
+
+
+def get_daily_thought():
+    """
+    Return a (quote, author, source) tuple for today.
+
+    Tries the ZenQuotes "today" endpoint first so the quote is tied to the
+    calendar day server-side.  Falls back to the deterministic built-in TIPS
+    list if the API is unreachable or returns unusable data.
+    """
+    url = "https://zenquotes.io/api/today"
+    try:
+        with urllib.request.urlopen(url, timeout=10) as response:
+            data = json.loads(response.read())
+        if isinstance(data, list) and data:
+            q = data[0].get("q", "").strip()
+            a = data[0].get("a", "").strip()
+            if q and a:
+                print(f"Fetched today's quote from ZenQuotes API: {q} — {a}")
+                return q, a, "ZenQuotes API"
+    except Exception as exc:
+        print(f"ZenQuotes API unavailable ({exc}); using built-in fallback.")
+
+    tip, author = _get_fallback_thought()
+    print(f"Using built-in fallback: {tip} — {author}")
+    return tip, author, "built-in"
+
+
+def build_thought_block(quote: str, author: str) -> str:
+    """
+    Build the full replacement block (including markers) for the Daily Thought.
+
+    The embedded <!-- date: YYYY-MM-DD --> comment serves two purposes:
+    1. Idempotency: two workflow runs on the *same* UTC day produce identical
+       output, so the second run finds no staged changes and skips the commit.
+    2. Daily change guarantee: on every new UTC day the date string is different,
+       ensuring a new commit is produced even if the quote text happens to repeat
+       (e.g. when the ZenQuotes API returns the same quote on consecutive days).
+    """
+    today = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d")
+    return (
+        f"{START_MARKER}\n"
+        f"<!-- date: {today} -->\n"
+        f'> "{quote}"\n'
+        ">\n"
+        f"> — *{author}*\n"
+        f"{END_MARKER}"
+    )
 
 
 def update_readme(readme_path):
     """
-    Update README.md file with a new random tip.
-    
+    Update README.md with today's Daily Thought.
+
     Args:
-        readme_path: Path to the README.md file
-        
+        readme_path: Path to the README.md file.
+
     Returns:
-        bool: True if file was updated, False otherwise
+        bool: True if the file was changed and written, False otherwise.
     """
     try:
-        # Read the current README content
-        with open(readme_path, 'r', encoding='utf-8') as f:
+        with open(readme_path, "r", encoding="utf-8") as f:
             content = f.read()
-        
-        # Check if markers exist
+
         if START_MARKER not in content or END_MARKER not in content:
-            print(f"Error: Markers not found in {readme_path}")
-            print(f"Please add {START_MARKER} and {END_MARKER} to your README.md")
+            print(f"Error: markers not found in {readme_path}")
+            print(f"  Expected: {START_MARKER} … {END_MARKER}")
             return False
-        
-        # Get a random tip
-        new_tip = get_random_tip()
-        
-        # Replace content between markers
-        pattern = f"{re.escape(START_MARKER)}.*?{re.escape(END_MARKER)}"
-        replacement = f"{START_MARKER}{new_tip}{END_MARKER}"
-        
+
+        quote, author, source = get_daily_thought()
+        new_block = build_thought_block(quote, author)
+
         updated_content = re.sub(
-            pattern,
-            replacement,
+            r"<!-- daily-thought-start -->.*?<!-- daily-thought-end -->",
+            new_block,
             content,
-            flags=re.DOTALL
+            flags=re.DOTALL,
         )
-        
-        # Check if content actually changed
+
         if updated_content == content:
-            print("Content is already up to date")
+            print("Daily thought is already up to date — no changes written.")
             return False
-        
-        # Write updated content back to file
-        with open(readme_path, 'w', encoding='utf-8') as f:
+
+        with open(readme_path, "w", encoding="utf-8") as f:
             f.write(updated_content)
-        
-        print(f"✅ Successfully updated {readme_path}")
-        print(f"New tip: {new_tip.strip()}")
+
+        print(f"✅ README updated ({source}): {quote} — {author}")
         return True
-        
+
     except FileNotFoundError:
         print(f"Error: {readme_path} not found")
         return False
-    except Exception as e:
-        print(f"Error updating README: {e}")
+    except Exception as exc:
+        print(f"Error updating README: {exc}")
         return False
 
 
 def main():
-    """Main function to run the update."""
+    """Entry point."""
     readme_path = Path(__file__).parent / "README.md"
-    
-    print("🔄 Starting README update...")
+    print("🔄 Starting Daily Thought update…")
     success = update_readme(readme_path)
-    
     if success:
         print("✨ Update completed successfully!")
     else:
-        print("⚠️  Update failed or no changes needed")
+        print("⚠️  No update needed or update failed.")
 
 
 if __name__ == "__main__":
