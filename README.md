@@ -16,8 +16,8 @@
 ## 🧠 Daily Thought
 
 <!-- daily-thought-start -->
-<!-- date: 2026-03-14 -->
-> "Side effects should be isolated and explicit."
+<!-- date: 2026-03-18 -->
+> "Binary search is O(log n). Use it for sorted data."
 >
 > — *Programming Wisdom*
 <!-- daily-thought-end -->
