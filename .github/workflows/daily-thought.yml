@@ -2,7 +2,14 @@ name: Daily Thought Update
 
 on:
   schedule:
-    - cron: '37 9 * * *'
+    # Run every 6 hours so a single missed trigger never causes a missed day.
+    # The embedded <!-- date: YYYY-MM-DD --> line in the README block makes
+    # the operation idempotent: only the first run of each UTC calendar day
+    # actually commits a change; subsequent same-day runs exit with "no changes".
+    - cron: '0 0 * * *'   # midnight UTC
+    - cron: '0 6 * * *'   # 06:00 UTC
+    - cron: '0 12 * * *'  # 12:00 UTC
+    - cron: '0 18 * * *'  # 18:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -11,12 +18,19 @@ permissions:
 jobs:
   update-daily-thought:
     runs-on: ubuntu-latest
+    # Prevent parallel runs from racing on the same commit
+    concurrency:
+      group: daily-thought
+      cancel-in-progress: false
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          # Explicitly disable submodule handling to avoid spurious warnings
+          # from the 'dashboard' directory which is not a registered submodule.
+          submodules: false
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,7 +46,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add README.md
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No changes to commit — thought already up to date for today."
           else
             git commit -m "🧠 Update daily thought [automated]"
             git pull --rebase

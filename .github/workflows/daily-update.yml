@@ -2,12 +2,11 @@ name: Daily Thought Update (backup)
 
 on:
   schedule:
-    # Primary trigger at 00:05 UTC.  Acts as a redundant backup: if
-    # daily-thought.yml (09:37 UTC) already ran and committed today's thought,
-    # this run will detect no changes via the <!-- date: --> comment and exit
-    # without creating a duplicate commit.  Having two scheduled triggers
-    # increases reliability in case GitHub Actions delays one workflow.
-    - cron: '5 0 * * *'
+    # Backup trigger at 03:30 UTC — offset from the primary workflow (every 6 h
+    # starting at midnight) so this run fills in if midnight UTC is delayed.
+    # Same idempotency guarantee applies: no commit is made if the thought was
+    # already updated today by the primary workflow.
+    - cron: '30 3 * * *'
   workflow_dispatch: # Allows manual trigger for testing
 
 jobs:
@@ -17,11 +16,19 @@ jobs:
     permissions:
       contents: write
 
+    # Prevent parallel runs from racing on the same commit
+    concurrency:
+      group: daily-thought
+      cancel-in-progress: false
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        # Explicitly disable submodule handling to avoid spurious warnings
+        # from the 'dashboard' directory which is not a registered submodule.
+        submodules: false
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -38,7 +45,7 @@ jobs:
         git config --local user.name "github-actions[bot]"
         git add README.md
         if git diff --staged --quiet; then
-          echo "No changes to commit"
+          echo "No changes to commit — thought already up to date for today."
         else
           git commit -m "🧠 Update daily thought [automated]"
           git pull --rebase
