@@ -16,9 +16,8 @@
 
 
 >  ```
-> > "The void is never truly silent; it merely waits ... "
-> 
----
+> > "The VOID is never complete; it only waits for the right moment... ... "
+>  ```
 
 ## 📊 Repository Analytics
 
