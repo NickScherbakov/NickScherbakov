@@ -16,7 +16,7 @@
 
 
 >  ```
-> > "The VOID is never complete; it only waits for the right moment... ... "
+> > "The VOID is never complete, it only waits for the right moment... ... "
 >  ```
 
 ## 📊 Repository Analytics
