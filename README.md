@@ -16,7 +16,7 @@
 
 
 >  ```
-> > "The VOID is never complete, it only waits for the right moment... ... "
+> "Life is life and it is beautiful" — R. M. Gorbacheva"
 >  ```
 
 ## 📊 Repository Analytics
