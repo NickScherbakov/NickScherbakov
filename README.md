@@ -16,7 +16,6 @@
 1. **"The impossible is simply something you didn't want enough."**
 2. **"Nothing is impossible; it is merely a matter of how much you want it."**
 3. **"The impossible is but a lack of sufficient desire."**
-***   
           — *A collaborative reflection by Human & AI on Google Search*
 ---
 
