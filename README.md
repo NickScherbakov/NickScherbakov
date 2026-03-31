@@ -13,9 +13,10 @@
 
 ---
 ## 🧠 Daily Thought
-1. **"The impossible is simply something you didn't want enough."** — *A collaborative reflection by Human & AI on Google Search*
-2. **"Nothing is impossible; it is merely a matter of how much you want it."** — *A collaborative reflection by Human & AI on Google Search*
-3. **"The impossible is but a lack of sufficient desire."** — *A collaborative reflection by Human & AI on Google Search*
+1. **"The impossible is simply something you didn't want enough."**
+2. **"Nothing is impossible; it is merely a matter of how much you want it."**
+3. **"The impossible is but a lack of sufficient desire."**
+             — *A collaborative reflection by Human & AI on Google Search*
 ---
 
 ## 📊 Repository Analytics
