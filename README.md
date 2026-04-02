@@ -50,23 +50,6 @@
 
 ---
 
-## 🏆 Top Original Repositories (by Stars)
-
-<div align="center">
-
-[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=very-simple-tetris-created-by-Copilot&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=FFFFFF)](https://github.com/NickScherbakov/very-simple-tetris-created-by-Copilot)
-[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=codementor-ai-platform&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=FFFFFF)](https://github.com/NickScherbakov/codementor-ai-platform)
-
-[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=Heinrich-The-Inventing-Machine&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=FFFFFF)](https://github.com/NickScherbakov/Heinrich-The-Inventing-Machine)
-[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=bridge-rescue-archive&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=FFFFFF)](https://github.com/NickScherbakov/bridge-rescue-archive)
-
-[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=NickScherbakov&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=FFFFFF)](https://github.com/NickScherbakov/NickScherbakov)
-[![Readme Card](https://github-readme-stats-sigma-five.vercel.app/api/pin/?username=NickScherbakov&repo=KhazarLLMs&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=FFFFFF)](https://github.com/NickScherbakov/KhazarLLMs)
-
-</div>
-
----
-
 <div align="center">
 
 ![Profile Views](https://komarev.com/ghpvc/?username=NickScherbakov&color=2E9EFF&style=flat-square&label=Profile+Views)  
