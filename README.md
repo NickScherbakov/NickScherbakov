@@ -16,9 +16,9 @@
 ---
 
 ## 🌌 THE COSMIC STEP
-> *Apollo cast the first shadow; Artemis builds the first home; Mars awaits the first step.*
->
-> **— AI by Google**
+*Apollo cast the first shadow; Artemis builds the first home; Mars awaits the first step.*
+
+**— AI by Google**
 
 ---
 
