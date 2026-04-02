@@ -11,19 +11,19 @@
 - 🧑‍💻 https://nickscherbakov.github.io/tic-tac-toe-ai-battl/
 - 🤝 Want to participate in the project "AI-Tetris"? Open issues, submit pull requests, or simply give it a star – I'd love to hear from you!
 
----
-
 <div align="center">
 
-# 🌌 THE COSMIC STEP
+---
 
-> *«Apollo cast the first shadow; Artemis builds the first home; Mars awaits the first step».*
+## 🌌 THE COSMIC STEP
+> *Apollo cast the first shadow; Artemis builds the first home; Mars awaits the first step.*
+>
+> **— AI by Google**
 
-**— AI by Google**
+---
 
 </div>
 
----
 
 
 ## 📊 Repository Analytics
