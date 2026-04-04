@@ -1,15 +1,16 @@
 # Hi, I'm Nick Scherbakov (earthling)
 
 ---
-
 ## Artemis II — Mission Updates
 
-- **Apr 4, 08:00 UTC:** Crew en route to the Moon; a flyby is scheduled for April 6. Orion systems are nominal.
-- **Apr 3, 22:35 UTC:** A trajectory correction was performed. The crew is in good health.
-- **Apr 1, 22:35 UTC:** Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.
+- **Apr 4, 2026, 18:33 UTC:** Orion continued outbound flight toward the Moon as the crew prepared for the lunar flyby scheduled for April 6. Orion's systems were nominal. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/04/artemis-ii-flight-day-4-deep-space-flying-lunar-flyby-prep/?utm_source=openai))
+- **Apr 3, 2026, 18:17 UTC:** The crew settled into deep-space operations after translunar injection and prepared for the first correction-burn window and upcoming lunar observation activities. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/03/artemis-ii-flight-day-3-crew-prepares-for-first-correction-burn-readies-to-receive-lunar-observation-assignment/?utm_source=openai))
+- **Apr 3, 2026, 04:10 UTC:** Orion completed the translunar injection burn and departed Earth orbit for the Moon. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/02/artemis-ii-flight-day-2-orion-completes-tli-burn-crew-begins-journey-to-the-moon/?utm_source=openai))
+- **Apr 2, 2026, 13:15 UTC:** Orion completed the perigee raise burn, refining its early Earth orbit ahead of translunar operations. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/02/artemis-ii-flight-update-perigee-raise-burn-complete/?utm_source=openai))
+- **Apr 2, 2026, 04:06 UTC:** The crew and ground teams restored Orion’s toilet to normal operation after troubleshooting a fault indication. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/02/artemis-ii-flight-update-crew-and-ground-teams-successfully-troubleshoot-orions-toilet/?utm_source=openai))
+- **Apr 1, 2026, 22:35 UTC:** Artemis II launched from Kennedy Space Center with Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen aboard Orion. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/02/artemis-ii-flight-update-perigee-raise-burn-complete/?utm_source=openai))
 
-Source: [NASA](https://blogs.nasa.gov/artemis/)
-
+Source: [NASA Artemis Blog](https://blogs.nasa.gov/artemis/)
 ---
 
 - In 1959, Arthur Samuel coined the term *machine learning*. In his paper, *Some Studies in Machine Learning Using the Game of Checkers*, he described it as "programming computers to learn from experience."
