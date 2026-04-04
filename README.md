@@ -1,5 +1,17 @@
 # 👋 Hi, I'm Nick Scherbakov (earthling)
 
+---
+
+**Artemis II — Mission Updates (NASA)**
+
+- Apr 4, 08:00 UTC: Crew en route to the Moon, flyby scheduled for April 6. Orion systems nominal.
+- Apr 3, 22:35 UTC: Trajectory correction performed, crew in good health.
+- Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.
+
+Source: [NASA](https://blogs.nasa.gov/artemis/)
+
+---
+
 - ✨ In 1959, Arthur Samuel coined the term machine learning.
      In his paper, "Some Studies in Machine Learning Using the Game of Checkers"
      he described machine learning as "programming computers to learn from experience."
