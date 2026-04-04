@@ -1,6 +1,5 @@
 # Hi, I'm Nick Scherbakov (earthling)
 
----
 ## Artemis II — Mission Updates
 
 - **Apr 4, 2026, 18:33 UTC:** Orion continued outbound flight toward the Moon as the crew prepared for the lunar flyby scheduled for April 6. Orion's systems were nominal. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/04/artemis-ii-flight-day-4-deep-space-flying-lunar-flyby-prep/?utm_source=openai))
