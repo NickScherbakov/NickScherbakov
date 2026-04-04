@@ -29,18 +29,6 @@
 
 ![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=NickScherbakov&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&text_color=FFFFFF)
 
-</div>
----
-
-**Artemis II — Mission Updates (NASA)**
-
-- Apr 4, 08:00 UTC: Crew en route to the Moon, flyby scheduled for April 6. Orion systems nominal.
-- Apr 3, 22:35 UTC: Trajectory correction performed, crew in good health.
-- Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.
-
-Source: [NASA](https://blogs.nasa.gov/artemis/)
-
----
 <div align="center">
 
 ![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app/?user=NickScherbakov&theme=tokyonight&hide_border=true&background=0D1117&stroke=2E9EFF&ring=2E9EFF&fire=FF6B6B&currStreakLabel=2E9EFF)
