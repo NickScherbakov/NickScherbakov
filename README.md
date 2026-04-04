@@ -13,12 +13,11 @@
 
 <div align="center">
 
- ---
 <div align="center">
 
 ---
 
-<div style="background: #1d2b44; color: #fff; padding: 14px 18px; border-radius: 8px; font-size: 1.05em; font-family: 'Golos Text', Arial, sans-serif; margin: 18px 0; line-height: 1.7; text-align: center;">
+<div style="background: #1d2b44; color: #fff; padding: 14px 18px; border-radius: 8px; font-size: 1.05em; font-family: 'Golos Text', Arial, sans-serif; margin: 18px 0; line-height: 1.7; text-align: left; display: inline-block; max-width: 900px;">
 
 <b>Artemis II — Mission Updates (NASA):</b><br><br>
 Apr 4, 08:00 UTC: Crew en route to the Moon, flyby scheduled for April 6. Orion systems nominal.<br>
@@ -26,6 +25,11 @@ Apr 3, 22:35 UTC: Trajectory correction performed, crew in good health.<br>
 Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.<br><br>
 <span style="opacity: 0.7; font-size: 0.97em;">Source: <a href="https://blogs.nasa.gov/artemis/" target="_blank" style="color:#fff;text-decoration:underline;">NASA</a></span>
 
+</div>
+
+---
+
+</div>
 </div>
 
 ---
