@@ -15,15 +15,18 @@
 
  ---
 
- <div style="background: #1d2b44; color: #fff; padding: 12px 0; border-radius: 8px; font-size: 1.15em; font-family: 'Golos Text', Arial, sans-serif; overflow-x: auto; 
-white-space: nowrap;">
-   <b>Artemis II — Mission Updates (NASA):</b>
-   <span style="margin: 0 18px;">Apr 4, 08:00 UTC: Crew en route to the Moon, flyby scheduled for April 6. Orion systems nominal.</span>
-   <span style="margin: 0 18px;">Apr 3, 22:35 UTC: Trajectory correction performed, crew in good health.</span>
-   <span style="margin: 0 18px;">Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.</span>
-   <span style="margin: 0 18px; opacity: 0.7; font-size: 0.97em;">Source: <a href="https://blogs.nasa.gov/artemis/" target="_blank" 
+ <div style="background: #1d2b44; color: #fff; padding: 14px 0 14px 0; border-radius: 8px; font-size: 1.15em; font-family: 'Golos Text', Arial, sans-serif; overflow-x: 
+auto; white-space: nowrap; margin: 18px 0;">
+
+ <b>Artemis II — Mission Updates (NASA):</b>
+ <span style="margin: 0 18px;">Apr 4, 08:00 UTC: Crew en route to the Moon, flyby scheduled for April 6. Orion systems nominal.</span>
+ <span style="margin: 0 18px;">Apr 3, 22:35 UTC: Trajectory correction performed, crew in good health.</span>
+ <span style="margin: 0 18px;">Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.</span>
+ <span style="margin: 0 18px; opacity: 0.7; font-size: 0.97em;">Source: <a href="https://blogs.nasa.gov/artemis/" target="_blank" 
 style="color:#fff;text-decoration:underline;">NASA</a></span>
+
  </div>
+
 
  ---
 
