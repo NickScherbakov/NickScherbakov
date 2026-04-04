@@ -10,6 +10,10 @@
 - **Apr 1, 2026, 22:35 UTC:** Artemis II launched from Kennedy Space Center with Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen aboard Orion. ([nasa.gov](https://www.nasa.gov/blogs/missions/2026/04/02/artemis-ii-flight-update-perigee-raise-burn-complete/?utm_source=openai))
 
 Source: [NASA Artemis Blog](https://blogs.nasa.gov/artemis/)
+---
+---
+Fan facts
+---
 
 - In 1959, Arthur Samuel coined the term *machine learning*. In his paper, *Some Studies in Machine Learning Using the Game of Checkers*, he described it as "programming computers to learn from experience."
 - I'm interested in peace, friendship, and chewing gum.
