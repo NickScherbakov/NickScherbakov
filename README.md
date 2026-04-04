@@ -11,32 +11,6 @@
 - 🧑‍💻 https://nickscherbakov.github.io/tic-tac-toe-ai-battl/
 - 🤝 Want to participate in the project "AI-Tetris"? Open issues, submit pull requests, or simply give it a star – I'd love to hear from you!
 
-<div align="center">
-
-<div align="center">
-
----
-
-<div style="background: #1d2b44; color: #fff; padding: 14px 18px; border-radius: 8px; font-size: 1.05em; font-family: 'Golos Text', Arial, sans-serif; margin: 18px 0; line-height: 1.7; text-align: left; display: inline-block; max-width: 900px;">
-
-<b>Artemis II — Mission Updates (NASA):</b><br><br>
-Apr 4, 08:00 UTC: Crew en route to the Moon, flyby scheduled for April 6. Orion systems nominal.<br>
-Apr 3, 22:35 UTC: Trajectory correction performed, crew in good health.<br>
-Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.<br><br>
-<span style="opacity: 0.7; font-size: 0.97em;">Source: <a href="https://blogs.nasa.gov/artemis/" target="_blank" style="color:#fff;text-decoration:underline;">NASA</a></span>
-
-</div>
-
----
-
-</div>
-</div>
-
----
-
-</div>
- ---
-
  </div>
 
 
@@ -56,7 +30,17 @@ Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch,
 ![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=NickScherbakov&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&text_color=FFFFFF)
 
 </div>
+---
 
+**Artemis II — Mission Updates (NASA)**
+
+- Apr 4, 08:00 UTC: Crew en route to the Moon, flyby scheduled for April 6. Orion systems nominal.
+- Apr 3, 22:35 UTC: Trajectory correction performed, crew in good health.
+- Apr 1, 22:35 UTC: Artemis II launched from Kennedy. Crew: Wiseman, Glover, Koch, Hansen.
+
+Source: [NASA](https://blogs.nasa.gov/artemis/)
+
+---
 <div align="center">
 
 ![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app/?user=NickScherbakov&theme=tokyonight&hide_border=true&background=0D1117&stroke=2E9EFF&ring=2E9EFF&fire=FF6B6B&currStreakLabel=2E9EFF)
