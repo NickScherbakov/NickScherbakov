@@ -2,6 +2,9 @@
 
 ## Artemis II — Mission Updates
 
+> **Apr 5, 2026 · 14:47 UTC**  
+> Orion completed final navigation checks and attitude adjustments ahead of tomorrow's lunar flyby. The crew conducted a live downlink session and reported all systems nominal. Distance to the Moon: approximately 12 000 km.
+>
 > **Apr 4, 2026 · 18:33 UTC**  
 > Orion continued outbound flight toward the Moon as the crew prepared for the lunar flyby scheduled for April 6. Orion's systems were nominal.
 >
