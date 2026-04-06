@@ -2,19 +2,22 @@
 
 ## Artemis II — Mission Updates
 
-> **Apr 5, 2026 · 14:47 UTC**  
-> Orion completed final navigation checks and attitude adjustments ahead of tomorrow's lunar flyby. The crew conducted a live downlink session and reported all systems nominal. Distance to the Moon: approximately 12 000 km.
->
-> **Apr 4, 2026 · 18:33 UTC**  
-> Orion continued outbound flight toward the Moon as the crew prepared for the lunar flyby scheduled for April 6. Orion's systems were nominal.
->
-> **Apr 3, 2026 · 04:10 UTC**  
-> Orion completed the translunar injection burn and departed Earth orbit for the Moon.
->
-> **Apr 1, 2026 · 22:35 UTC**  
-> Artemis II launched from Kennedy Space Center with Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen aboard Orion.
+- **Apr 6, 2026 – 18:45 UTC**  
+  Orion completed its closest approach to the Moon (~4 070 miles) during a ~7‑hour lunar observation window. The crew conducted targeted visual studies of 30 geological features, including Reiner Gamma, Glushko, the Orientale basin, and the Hertzsprung basin. Earlier in the day, the crew set a new record for the farthest distance from Earth ever traveled by humans, surpassing Apollo 13’s 1970 mark. A planned comms blackout occurred as Orion passed behind the Moon.
 
-Source: [NASA Artemis Blog](https://blogs.nasa.gov/artemis/)
+- **Apr 5, 2026 – 14:47 UTC**  
+  Orion completed final navigation checks and attitude adjustments ahead of tomorrow's lunar flyby. The crew conducted a live downlink session and reported all systems nominal. Distance to the Moon: approximately 12 000 km.
+
+- **Apr 4, 2026 – 18:33 UTC**  
+  Orion continued outbound flight toward the Moon as the crew prepared for the lunar flyby scheduled for April 6. Orion's systems were nominal.
+
+- **Apr 3, 2026 – 04:10 UTC**  
+  Orion completed the translunar injection burn and departed Earth orbit for the Moon.
+
+- **Apr 1, 2026 – 22:35 UTC**  
+  Artemis II launched from Kennedy Space Center with Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen aboard Orion.
+
+**Source:** [NASA Artemis Blog](https://blogs.nasa.gov/artemis/)
 
 ## About
 
