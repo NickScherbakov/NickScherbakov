@@ -3,7 +3,7 @@
 ## Artemis II — Mission Updates
 
 - **Apr 6, 2026 – 18:45 UTC**  
-  Orion completed its closest approach to the Moon (~4 070 miles) during a ~7‑hour lunar observation window. The crew conducted targeted visual studies of 30 geological features, including Reiner Gamma, Glushko, the Orientale basin, and the Hertzsprung basin. Earlier in the day, the crew set a new record for the farthest distance from Earth ever traveled by humans, surpassing Apollo 13’s 1970 mark. A planned comms blackout occurred as Orion passed behind the Moon.
+  Orion completed its closest approach to the Moon (~4 070 miles) during a ~7‑hour lunar observation window. The crew conducted targeted visual studies of 30 geological features, including Reiner Gamma, Glushko, the Orientale basin, and the Hertzsprung basin.
 
 - **Apr 5, 2026 – 14:47 UTC**  
   Orion completed final navigation checks and attitude adjustments ahead of tomorrow's lunar flyby. The crew conducted a live downlink session and reported all systems nominal. Distance to the Moon: approximately 12 000 km.
