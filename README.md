@@ -2,6 +2,9 @@
 
 ## Artemis II — Mission Updates
 
+- **Apr 7, 2026 – 23:35 UTC**
+  After their historic lunar flyby on April 6, the Artemis II crew is awake and preparing for the journey back to Earth. The crew started the day 36,286 miles from the Moon and 236,022 miles from Earth.
+
 - **Apr 6, 2026 – 18:45 UTC**  
   Orion completed its closest approach to the Moon (~4 070 miles) during a ~7‑hour lunar observation window. The crew conducted targeted visual studies of 30 geological features, including Reiner Gamma, Glushko, the Orientale basin, and the Hertzsprung basin.
 
