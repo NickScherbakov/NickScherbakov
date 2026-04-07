@@ -2,6 +2,9 @@
 
 ## Artemis II — Mission Updates
 
+- **Apr 7, 2026 – 17:25 UTC**  
+  NASA reports Orion exited the Moon's sphere of influence at ~41 072 miles from the lunar surface (1:25 p.m. EDT), beginning the free-return coast back to Earth after the lunar flyby. Orion reached ~252 756 miles from Earth, surpassing the Apollo 13 distance record.
+
 - **Apr 6, 2026 – 18:45 UTC**  
   Orion completed its closest approach to the Moon (~4 070 miles) during a ~7‑hour lunar observation window. The crew conducted targeted visual studies of 30 geological features, including Reiner Gamma, Glushko, the Orientale basin, and the Hertzsprung basin.
 
