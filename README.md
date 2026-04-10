@@ -2,6 +2,15 @@
 
 ## Artemis II — Mission Updates
 
+- **Apr 10, 2026 – 00:07 UTC**
+  Orion splashed down in the Pacific Ocean approximately 50 miles off the coast of San Diego, completing the Artemis II mission. Atmospheric entry began at ~23:53 UTC (Apr 10), parachutes deployed at ~00:03 UTC, and the crew — Reid Wiseman, Victor Glover, Christina Koch, and Jeremy Hansen — was recovered by the USS John P. Murtha. The mission set a new record for the farthest distance humans have traveled from Earth: 252,756 miles, surpassing the Apollo 13 mark.
+
+- **Apr 9, 2026 – 13:00 UTC**
+  On Flight Day 9, the crew packed equipment, reviewed reentry and splashdown procedures, and prepared Orion for its final day in space. A Return Trajectory Correction Burn (RTC-2) — a 9-second firing of the reaction control thrusters — was performed at 01:53 UTC (Apr 10) to refine the spacecraft's Earth-return path. Splashdown confirmed on track for April 10 at 8:07 p.m. EDT.
+
+- **Apr 8, 2026 – 13:00 UTC**
+  On Flight Day 8, the crew conducted key tests on the return leg, including evaluation of the orthostatic intolerance garment designed to help maintain blood pressure during reentry, a flywheel exercise session, and review of Orion's attitude-control thruster modes (6-DOF and 3-DOF). The crew was 200,278 miles from Earth and 83,549 miles from the Moon at wakeup. A media conference with live Q&A from the crew was held in the evening.
+
 - **Apr 7, 2026 – 23:35 UTC**
   After their historic lunar flyby on April 6, the Artemis II crew is awake and preparing for the journey back to Earth. The crew started the day 36,286 miles from the Moon and 236,022 miles from Earth.
 
