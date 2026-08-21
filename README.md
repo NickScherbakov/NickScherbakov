@@ -15,14 +15,6 @@
 
 <div align="center">
 
-![GitHub Stats](https://github-readme-stats-sigma-five.vercel.app/api?username=NickScherbakov&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&icon_color=2E9EFF&text_color=FFFFFF&custom_title=Nick's+GitHub+Stats&include_all_commits=true&count_private=true&line_height=24)
-
-![Top Languages](https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=NickScherbakov&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=2E9EFF&text_color=FFFFFF&langs_count=8)
-
-</div>
-
-<div align="center">
-
 ![GitHub Streak](https://github-readme-streak-stats-eight.vercel.app/?user=NickScherbakov&theme=tokyonight&hide_border=true&background=0D1117&stroke=2E9EFF&ring=2E9EFF&fire=FF6B6B&currStreakLabel=2E9EFF)
 
 </div>
